@@ -1,0 +1,1297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661637E220804C7300794ED1 /* YXConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661637E120804C7300794ED1 /* YXConst.swift */; };
+		661637E420804D5100794ED1 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661637E320804D5100794ED1 /* UIKit+Extension.swift */; };
+		661637E620804E5600794ED1 /* YXTransitionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661637E520804E5600794ED1 /* YXTransitionHomeViewController.swift */; };
+		661792F320805ACB00D69E07 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792D720805ACB00D69E07 /* back@2x.png */; };
+		661792F420805ACB00D69E07 /* Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792D820805ACB00D69E07 /* Base.png */; };
+		661792F520805ACB00D69E07 /* CATransition.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792D920805ACB00D69E07 /* CATransition.png */; };
+		661792F620805ACB00D69E07 /* content.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792DA20805ACB00D69E07 /* content.png */; };
+		661792F720805ACB00D69E07 /* Expression01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792DC20805ACB00D69E07 /* Expression01.jpeg */; };
+		661792F820805ACB00D69E07 /* Expression02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792DD20805ACB00D69E07 /* Expression02.jpeg */; };
+		661792F920805ACB00D69E07 /* Expression03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792DE20805ACB00D69E07 /* Expression03.jpeg */; };
+		661792FA20805ACB00D69E07 /* Expression04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792DF20805ACB00D69E07 /* Expression04.jpeg */; };
+		661792FB20805ACB00D69E07 /* Expression05.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E020805ACB00D69E07 /* Expression05.jpeg */; };
+		661792FC20805ACB00D69E07 /* Expression06.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E120805ACB00D69E07 /* Expression06.jpeg */; };
+		661792FD20805ACB00D69E07 /* Expression07.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E220805ACB00D69E07 /* Expression07.jpeg */; };
+		661792FE20805ACB00D69E07 /* Expression08.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E320805ACB00D69E07 /* Expression08.jpeg */; };
+		661792FF20805ACB00D69E07 /* Expression09.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E420805ACB00D69E07 /* Expression09.jpeg */; };
+		6617930020805ACB00D69E07 /* Expression10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E520805ACB00D69E07 /* Expression10.jpeg */; };
+		6617930120805ACB00D69E07 /* Expression11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E620805ACB00D69E07 /* Expression11.jpeg */; };
+		6617930220805ACB00D69E07 /* flip.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792E720805ACB00D69E07 /* flip.png */; };
+		6617930320805ACB00D69E07 /* kugoou.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792E820805ACB00D69E07 /* kugoou.png */; };
+		6617930420805ACB00D69E07 /* kugou-Interactive.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792E920805ACB00D69E07 /* kugou-Interactive.jpeg */; };
+		6617930520805ACB00D69E07 /* nodata.png in Resources */ = {isa = PBXBuildFile; fileRef = 661792EA20805ACB00D69E07 /* nodata.png */; };
+		6617930620805ACB00D69E07 /* Wechat-Interactive.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 661792EB20805ACB00D69E07 /* Wechat-Interactive.jpeg */; };
+		6617930720805ACB00D69E07 /* wechat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792EC20805ACB00D69E07 /* wechat.jpg */; };
+		6617930820805ACB00D69E07 /* BeautyCar01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792EE20805ACB00D69E07 /* BeautyCar01.jpg */; };
+		6617930920805ACB00D69E07 /* BeautyCar02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792EF20805ACB00D69E07 /* BeautyCar02.jpg */; };
+		6617930A20805ACB00D69E07 /* BeautyCar03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792F020805ACB00D69E07 /* BeautyCar03.jpg */; };
+		6617930B20805ACB00D69E07 /* BeautyCar04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792F120805ACB00D69E07 /* BeautyCar04.jpg */; };
+		6617930C20805ACB00D69E07 /* BeautyCar05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 661792F220805ACB00D69E07 /* BeautyCar05.jpg */; };
+		6617931020805BD300D69E07 /* YXNavCATransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6617930F20805BD300D69E07 /* YXNavCATransitionFirstViewController.swift */; };
+		6617931220805C3700D69E07 /* YXNavCATransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6617931120805C3700D69E07 /* YXNavCATransitionSecondViewController.swift */; };
+		664A5CBB208827BC009A4640 /* YXQuestionsOneFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CBA208827BC009A4640 /* YXQuestionsOneFirstViewController.swift */; };
+		664A5CBD208827CC009A4640 /* YXQuestionsOneSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CBC208827CC009A4640 /* YXQuestionsOneSecondViewController.swift */; };
+		664A5CBF208827E6009A4640 /* YXQuestionOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CBE208827E6009A4640 /* YXQuestionOneCell.swift */; };
+		664A5CC1208827FB009A4640 /* YXQuestionsOneAnimationTrasition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CC0208827FB009A4640 /* YXQuestionsOneAnimationTrasition.swift */; };
+		664A5CC32088280B009A4640 /* YXQuestionsOnePushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CC22088280B009A4640 /* YXQuestionsOnePushAnimator.swift */; };
+		664A5CC52088281A009A4640 /* YXQuestionsOnePopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CC42088281A009A4640 /* YXQuestionsOnePopAnimator.swift */; };
+		664A5CD120886E58009A4640 /* YXQuestionTwoFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CD020886E58009A4640 /* YXQuestionTwoFirstViewController.swift */; };
+		664A5CD320886E7D009A4640 /* YXQuestionTwoSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CD220886E7D009A4640 /* YXQuestionTwoSecondViewController.swift */; };
+		664A5CD520886E94009A4640 /* YXQuestionTwoAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CD420886E94009A4640 /* YXQuestionTwoAnimationTransition.swift */; };
+		664A5CD720886EAD009A4640 /* YXQuestionTwoPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CD620886EAD009A4640 /* YXQuestionTwoPushAnimator.swift */; };
+		664A5CD920886EBA009A4640 /* YXQuestionTwoPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CD820886EBA009A4640 /* YXQuestionTwoPopAnimator.swift */; };
+		664A5CE720888956009A4640 /* YXPictureFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CE620888956009A4640 /* YXPictureFirstViewController.swift */; };
+		664A5CE9208889F8009A4640 /* YXPictureFirstPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CE8208889F8009A4640 /* YXPictureFirstPageCell.swift */; };
+		664A5CF020888C81009A4640 /* YXPictureBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CEF20888C81009A4640 /* YXPictureBrowseViewController.swift */; };
+		664A5CF220888CBF009A4640 /* YXPictureBrowseSouceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CF120888CBF009A4640 /* YXPictureBrowseSouceModel.swift */; };
+		664A5CF420888CE9009A4640 /* YXPictureBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CF320888CE9009A4640 /* YXPictureBrowserCell.swift */; };
+		664A5CF620888D08009A4640 /* YXBrowseZoomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CF520888D08009A4640 /* YXBrowseZoomScrollView.swift */; };
+		664A5CF820888D43009A4640 /* YXPictureBrowseTransitionParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CF720888D43009A4640 /* YXPictureBrowseTransitionParameter.swift */; };
+		664A5CFA20888D64009A4640 /* YXPictureBrowseInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CF920888D64009A4640 /* YXPictureBrowseInteractiveAnimatedTransition.swift */; };
+		664A5CFC20888D77009A4640 /* YXPictureBrowsePercentDrivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CFB20888D77009A4640 /* YXPictureBrowsePercentDrivenInteractive.swift */; };
+		664A5CFE20888D8B009A4640 /* YXPictureBrowsePushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CFD20888D8B009A4640 /* YXPictureBrowsePushAnimator.swift */; };
+		664A5D0020888D9C009A4640 /* YXPictureBrowsePopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A5CFF20888D9C009A4640 /* YXPictureBrowsePopAnimator.swift */; };
+		666BA0362085902200C9C466 /* YXNavWeChatPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0352085902200C9C466 /* YXNavWeChatPushAnimator.swift */; };
+		666BA0382085903200C9C466 /* YXNavWeChatPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0372085903200C9C466 /* YXNavWeChatPopAnimator.swift */; };
+		666BA03A2085904700C9C466 /* YXNavWeChatAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0392085904700C9C466 /* YXNavWeChatAnimationTransition.swift */; };
+		666BA03C2085905900C9C466 /* YXNavWeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA03B2085905900C9C466 /* YXNavWeChatViewController.swift */; };
+		666BA03E2085906800C9C466 /* YXNavWeChatSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA03D2085906800C9C466 /* YXNavWeChatSecondViewController.swift */; };
+		666BA04120859FF300C9C466 /* YXNavBaseInteractiveFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA04020859FF300C9C466 /* YXNavBaseInteractiveFirstViewController.swift */; };
+		666BA0432085A00F00C9C466 /* YXNavBaseInteractiveSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0422085A00F00C9C466 /* YXNavBaseInteractiveSecondViewController.swift */; };
+		666BA0452085A03500C9C466 /* YXNavBaseInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0442085A03500C9C466 /* YXNavBaseInteractiveAnimatedTransition.swift */; };
+		666BA0472085A07D00C9C466 /* YXNavBasePercentDerivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0462085A07D00C9C466 /* YXNavBasePercentDerivenInteractive.swift */; };
+		666BA04A2085EEAB00C9C466 /* YXNavKuGouInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0492085EEAB00C9C466 /* YXNavKuGouInteractiveViewController.swift */; };
+		666BA04C2085EED200C9C466 /* YXNavKuGouInteractiveSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA04B2085EED200C9C466 /* YXNavKuGouInteractiveSecondViewController.swift */; };
+		666BA04E2085EF0100C9C466 /* YXNavKuGouInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA04D2085EF0100C9C466 /* YXNavKuGouInteractiveAnimatedTransition.swift */; };
+		666BA0502085EF1C00C9C466 /* YXNavKuGouPercentDerivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA04F2085EF1C00C9C466 /* YXNavKuGouPercentDerivenInteractive.swift */; };
+		666BA0532085FA5300C9C466 /* YXNavWeChatInteractivePushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0522085FA5300C9C466 /* YXNavWeChatInteractivePushAnimator.swift */; };
+		666BA0552085FA6600C9C466 /* YXNavWeChatInteractivePopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0542085FA6600C9C466 /* YXNavWeChatInteractivePopAnimator.swift */; };
+		666BA0572085FA7900C9C466 /* YXNavWeChatPercentDrivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0562085FA7900C9C466 /* YXNavWeChatPercentDrivenInteractive.swift */; };
+		666BA0592085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA0582085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift */; };
+		666BA05B2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA05A2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift */; };
+		666BA05D2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BA05C2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift */; };
+		66A8977D20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8977C20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift */; };
+		66A8977F20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8977E20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift */; };
+		66A897832084827F007B8AC3 /* YXNavBaseFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A897822084827F007B8AC3 /* YXNavBaseFirstViewController.swift */; };
+		66A8978520848293007B8AC3 /* YXNavBaseSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8978420848293007B8AC3 /* YXNavBaseSecondViewController.swift */; };
+		66A89787208482CA007B8AC3 /* YXNavBaseCustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A89786208482CA007B8AC3 /* YXNavBaseCustomAnimator.swift */; };
+		66A8978A20849482007B8AC3 /* YXNavKuGouTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8978920849482007B8AC3 /* YXNavKuGouTransitionViewController.swift */; };
+		66A8978C20849498007B8AC3 /* YXNavKuGouSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8978B20849498007B8AC3 /* YXNavKuGouSecondViewController.swift */; };
+		66A8978E208494AF007B8AC3 /* YXNavKuGouPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8978D208494AF007B8AC3 /* YXNavKuGouPushAnimator.swift */; };
+		66A89790208494BF007B8AC3 /* YXNavKuGouAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8978F208494BF007B8AC3 /* YXNavKuGouAnimationTransition.swift */; };
+		66A89792208494CF007B8AC3 /* YXNavKuGouPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A89791208494CF007B8AC3 /* YXNavKuGouPopAnimator.swift */; };
+		66E020B72086D605000E1A80 /* YXModalBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020B62086D605000E1A80 /* YXModalBaseViewController.swift */; };
+		66E020B92086D619000E1A80 /* YXModalBaseSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020B82086D619000E1A80 /* YXModalBaseSecondViewController.swift */; };
+		66E020BF2086D89E000E1A80 /* YXModalKuGouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020BE2086D89E000E1A80 /* YXModalKuGouViewController.swift */; };
+		66E020C12086D8AC000E1A80 /* YXModalKuGouSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020C02086D8AC000E1A80 /* YXModalKuGouSecondViewController.swift */; };
+		66E020C32086D8BD000E1A80 /* YXModalKuGouAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020C22086D8BD000E1A80 /* YXModalKuGouAnimationTransition.swift */; };
+		66E020C52086DA52000E1A80 /* YXModalKuGouInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020C42086DA52000E1A80 /* YXModalKuGouInteractiveViewController.swift */; };
+		66E020C72086DA67000E1A80 /* YXModalKuGouInteractiveSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020C62086DA67000E1A80 /* YXModalKuGouInteractiveSecondViewController.swift */; };
+		66E020C92086DA81000E1A80 /* YXModalKuGouInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020C82086DA81000E1A80 /* YXModalKuGouInteractiveAnimatedTransition.swift */; };
+		66E020CB2086DA97000E1A80 /* YXModalKuGouPercentDerivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020CA2086DA97000E1A80 /* YXModalKuGouPercentDerivenInteractive.swift */; };
+		66E020CD2086DE4A000E1A80 /* YXModalWeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020CC2086DE4A000E1A80 /* YXModalWeChatViewController.swift */; };
+		66E020CF2086DE64000E1A80 /* YXModalWeChatSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020CE2086DE64000E1A80 /* YXModalWeChatSecondViewController.swift */; };
+		66E020D12086DE80000E1A80 /* YXModalWeChatAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020D02086DE80000E1A80 /* YXModalWeChatAnimationTransition.swift */; };
+		66E020D32086E0EC000E1A80 /* YXModalWeChatInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020D22086E0EC000E1A80 /* YXModalWeChatInteractiveViewController.swift */; };
+		66E020D52086E0F9000E1A80 /* YXModalWeChatInteractiveSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020D42086E0F9000E1A80 /* YXModalWeChatInteractiveSecondViewController.swift */; };
+		66E020D72086E10D000E1A80 /* YXModalWeChatInteractiveAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020D62086E10D000E1A80 /* YXModalWeChatInteractiveAnimatedTransition.swift */; };
+		66E020D92086E128000E1A80 /* YXModalWeChatPercentDrivenInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E020D82086E128000E1A80 /* YXModalWeChatPercentDrivenInteractive.swift */; };
+		66ECE817208047CD00EB2B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECE816208047CD00EB2B87 /* AppDelegate.swift */; };
+		66ECE81C208047CD00EB2B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ECE81A208047CD00EB2B87 /* Main.storyboard */; };
+		66ECE81E208047D000EB2B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66ECE81D208047D000EB2B87 /* Assets.xcassets */; };
+		66ECE821208047D000EB2B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ECE81F208047D000EB2B87 /* LaunchScreen.storyboard */; };
+		66ECE82C208047D100EB2B87 /* YXCustomTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECE82B208047D100EB2B87 /* YXCustomTransitionDemoTests.swift */; };
+		66ECE837208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECE836208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift */; };
+		FF1D8C5810D362DA93AE1021 /* Pods_YXCustomTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66F6FB2E1033402D5BA7CE0 /* Pods_YXCustomTransitionDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66ECE828208047D100EB2B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66ECE80B208047CD00EB2B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66ECE812208047CD00EB2B87;
+			remoteInfo = YXCustomTransitionDemo;
+		};
+		66ECE833208047D100EB2B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66ECE80B208047CD00EB2B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66ECE812208047CD00EB2B87;
+			remoteInfo = YXCustomTransitionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47AC05B8168EAD143B4FA22D /* Pods-YXCustomTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXCustomTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		661637E120804C7300794ED1 /* YXConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXConst.swift; sourceTree = "<group>"; };
+		661637E320804D5100794ED1 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		661637E520804E5600794ED1 /* YXTransitionHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXTransitionHomeViewController.swift; sourceTree = "<group>"; };
+		661792D720805ACB00D69E07 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		661792D820805ACB00D69E07 /* Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Base.png; sourceTree = "<group>"; };
+		661792D920805ACB00D69E07 /* CATransition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CATransition.png; sourceTree = "<group>"; };
+		661792DA20805ACB00D69E07 /* content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content.png; sourceTree = "<group>"; };
+		661792DC20805ACB00D69E07 /* Expression01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression01.jpeg; sourceTree = "<group>"; };
+		661792DD20805ACB00D69E07 /* Expression02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression02.jpeg; sourceTree = "<group>"; };
+		661792DE20805ACB00D69E07 /* Expression03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression03.jpeg; sourceTree = "<group>"; };
+		661792DF20805ACB00D69E07 /* Expression04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression04.jpeg; sourceTree = "<group>"; };
+		661792E020805ACB00D69E07 /* Expression05.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression05.jpeg; sourceTree = "<group>"; };
+		661792E120805ACB00D69E07 /* Expression06.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression06.jpeg; sourceTree = "<group>"; };
+		661792E220805ACB00D69E07 /* Expression07.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression07.jpeg; sourceTree = "<group>"; };
+		661792E320805ACB00D69E07 /* Expression08.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression08.jpeg; sourceTree = "<group>"; };
+		661792E420805ACB00D69E07 /* Expression09.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression09.jpeg; sourceTree = "<group>"; };
+		661792E520805ACB00D69E07 /* Expression10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression10.jpeg; sourceTree = "<group>"; };
+		661792E620805ACB00D69E07 /* Expression11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Expression11.jpeg; sourceTree = "<group>"; };
+		661792E720805ACB00D69E07 /* flip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flip.png; sourceTree = "<group>"; };
+		661792E820805ACB00D69E07 /* kugoou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kugoou.png; sourceTree = "<group>"; };
+		661792E920805ACB00D69E07 /* kugou-Interactive.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kugou-Interactive.jpeg"; sourceTree = "<group>"; };
+		661792EA20805ACB00D69E07 /* nodata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodata.png; sourceTree = "<group>"; };
+		661792EB20805ACB00D69E07 /* Wechat-Interactive.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wechat-Interactive.jpeg"; sourceTree = "<group>"; };
+		661792EC20805ACB00D69E07 /* wechat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.jpg; sourceTree = "<group>"; };
+		661792EE20805ACB00D69E07 /* BeautyCar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeautyCar01.jpg; sourceTree = "<group>"; };
+		661792EF20805ACB00D69E07 /* BeautyCar02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeautyCar02.jpg; sourceTree = "<group>"; };
+		661792F020805ACB00D69E07 /* BeautyCar03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeautyCar03.jpg; sourceTree = "<group>"; };
+		661792F120805ACB00D69E07 /* BeautyCar04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeautyCar04.jpg; sourceTree = "<group>"; };
+		661792F220805ACB00D69E07 /* BeautyCar05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeautyCar05.jpg; sourceTree = "<group>"; };
+		6617930F20805BD300D69E07 /* YXNavCATransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavCATransitionFirstViewController.swift; sourceTree = "<group>"; };
+		6617931120805C3700D69E07 /* YXNavCATransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavCATransitionSecondViewController.swift; sourceTree = "<group>"; };
+		664A5CBA208827BC009A4640 /* YXQuestionsOneFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionsOneFirstViewController.swift; sourceTree = "<group>"; };
+		664A5CBC208827CC009A4640 /* YXQuestionsOneSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionsOneSecondViewController.swift; sourceTree = "<group>"; };
+		664A5CBE208827E6009A4640 /* YXQuestionOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionOneCell.swift; sourceTree = "<group>"; };
+		664A5CC0208827FB009A4640 /* YXQuestionsOneAnimationTrasition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionsOneAnimationTrasition.swift; sourceTree = "<group>"; };
+		664A5CC22088280B009A4640 /* YXQuestionsOnePushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionsOnePushAnimator.swift; sourceTree = "<group>"; };
+		664A5CC42088281A009A4640 /* YXQuestionsOnePopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionsOnePopAnimator.swift; sourceTree = "<group>"; };
+		664A5CD020886E58009A4640 /* YXQuestionTwoFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionTwoFirstViewController.swift; sourceTree = "<group>"; };
+		664A5CD220886E7D009A4640 /* YXQuestionTwoSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionTwoSecondViewController.swift; sourceTree = "<group>"; };
+		664A5CD420886E94009A4640 /* YXQuestionTwoAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionTwoAnimationTransition.swift; sourceTree = "<group>"; };
+		664A5CD620886EAD009A4640 /* YXQuestionTwoPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionTwoPushAnimator.swift; sourceTree = "<group>"; };
+		664A5CD820886EBA009A4640 /* YXQuestionTwoPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXQuestionTwoPopAnimator.swift; sourceTree = "<group>"; };
+		664A5CE620888956009A4640 /* YXPictureFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureFirstViewController.swift; sourceTree = "<group>"; };
+		664A5CE8208889F8009A4640 /* YXPictureFirstPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureFirstPageCell.swift; sourceTree = "<group>"; };
+		664A5CEF20888C81009A4640 /* YXPictureBrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowseViewController.swift; sourceTree = "<group>"; };
+		664A5CF120888CBF009A4640 /* YXPictureBrowseSouceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowseSouceModel.swift; sourceTree = "<group>"; };
+		664A5CF320888CE9009A4640 /* YXPictureBrowserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowserCell.swift; sourceTree = "<group>"; };
+		664A5CF520888D08009A4640 /* YXBrowseZoomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXBrowseZoomScrollView.swift; sourceTree = "<group>"; };
+		664A5CF720888D43009A4640 /* YXPictureBrowseTransitionParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowseTransitionParameter.swift; sourceTree = "<group>"; };
+		664A5CF920888D64009A4640 /* YXPictureBrowseInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowseInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		664A5CFB20888D77009A4640 /* YXPictureBrowsePercentDrivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowsePercentDrivenInteractive.swift; sourceTree = "<group>"; };
+		664A5CFD20888D8B009A4640 /* YXPictureBrowsePushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowsePushAnimator.swift; sourceTree = "<group>"; };
+		664A5CFF20888D9C009A4640 /* YXPictureBrowsePopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXPictureBrowsePopAnimator.swift; sourceTree = "<group>"; };
+		666BA0352085902200C9C466 /* YXNavWeChatPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatPushAnimator.swift; sourceTree = "<group>"; };
+		666BA0372085903200C9C466 /* YXNavWeChatPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatPopAnimator.swift; sourceTree = "<group>"; };
+		666BA0392085904700C9C466 /* YXNavWeChatAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatAnimationTransition.swift; sourceTree = "<group>"; };
+		666BA03B2085905900C9C466 /* YXNavWeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatViewController.swift; sourceTree = "<group>"; };
+		666BA03D2085906800C9C466 /* YXNavWeChatSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatSecondViewController.swift; sourceTree = "<group>"; };
+		666BA04020859FF300C9C466 /* YXNavBaseInteractiveFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseInteractiveFirstViewController.swift; sourceTree = "<group>"; };
+		666BA0422085A00F00C9C466 /* YXNavBaseInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		666BA0442085A03500C9C466 /* YXNavBaseInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		666BA0462085A07D00C9C466 /* YXNavBasePercentDerivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBasePercentDerivenInteractive.swift; sourceTree = "<group>"; };
+		666BA0492085EEAB00C9C466 /* YXNavKuGouInteractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouInteractiveViewController.swift; sourceTree = "<group>"; };
+		666BA04B2085EED200C9C466 /* YXNavKuGouInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		666BA04D2085EF0100C9C466 /* YXNavKuGouInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		666BA04F2085EF1C00C9C466 /* YXNavKuGouPercentDerivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouPercentDerivenInteractive.swift; sourceTree = "<group>"; };
+		666BA0522085FA5300C9C466 /* YXNavWeChatInteractivePushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractivePushAnimator.swift; sourceTree = "<group>"; };
+		666BA0542085FA6600C9C466 /* YXNavWeChatInteractivePopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractivePopAnimator.swift; sourceTree = "<group>"; };
+		666BA0562085FA7900C9C466 /* YXNavWeChatPercentDrivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatPercentDrivenInteractive.swift; sourceTree = "<group>"; };
+		666BA0582085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		666BA05A2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveViewController.swift; sourceTree = "<group>"; };
+		666BA05C2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		66A8977C20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalCATransitionFirstViewController.swift; sourceTree = "<group>"; };
+		66A8977E20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalCATransitionSecondViewController.swift; sourceTree = "<group>"; };
+		66A897822084827F007B8AC3 /* YXNavBaseFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseFirstViewController.swift; sourceTree = "<group>"; };
+		66A8978420848293007B8AC3 /* YXNavBaseSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseSecondViewController.swift; sourceTree = "<group>"; };
+		66A89786208482CA007B8AC3 /* YXNavBaseCustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseCustomAnimator.swift; sourceTree = "<group>"; };
+		66A8978920849482007B8AC3 /* YXNavKuGouTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouTransitionViewController.swift; sourceTree = "<group>"; };
+		66A8978B20849498007B8AC3 /* YXNavKuGouSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouSecondViewController.swift; sourceTree = "<group>"; };
+		66A8978D208494AF007B8AC3 /* YXNavKuGouPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouPushAnimator.swift; sourceTree = "<group>"; };
+		66A8978F208494BF007B8AC3 /* YXNavKuGouAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouAnimationTransition.swift; sourceTree = "<group>"; };
+		66A89791208494CF007B8AC3 /* YXNavKuGouPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavKuGouPopAnimator.swift; sourceTree = "<group>"; };
+		66E020B62086D605000E1A80 /* YXModalBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalBaseViewController.swift; sourceTree = "<group>"; };
+		66E020B82086D619000E1A80 /* YXModalBaseSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalBaseSecondViewController.swift; sourceTree = "<group>"; };
+		66E020BE2086D89E000E1A80 /* YXModalKuGouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouViewController.swift; sourceTree = "<group>"; };
+		66E020C02086D8AC000E1A80 /* YXModalKuGouSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouSecondViewController.swift; sourceTree = "<group>"; };
+		66E020C22086D8BD000E1A80 /* YXModalKuGouAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouAnimationTransition.swift; sourceTree = "<group>"; };
+		66E020C42086DA52000E1A80 /* YXModalKuGouInteractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouInteractiveViewController.swift; sourceTree = "<group>"; };
+		66E020C62086DA67000E1A80 /* YXModalKuGouInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		66E020C82086DA81000E1A80 /* YXModalKuGouInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		66E020CA2086DA97000E1A80 /* YXModalKuGouPercentDerivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalKuGouPercentDerivenInteractive.swift; sourceTree = "<group>"; };
+		66E020CC2086DE4A000E1A80 /* YXModalWeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatViewController.swift; sourceTree = "<group>"; };
+		66E020CE2086DE64000E1A80 /* YXModalWeChatSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatSecondViewController.swift; sourceTree = "<group>"; };
+		66E020D02086DE80000E1A80 /* YXModalWeChatAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatAnimationTransition.swift; sourceTree = "<group>"; };
+		66E020D22086E0EC000E1A80 /* YXModalWeChatInteractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatInteractiveViewController.swift; sourceTree = "<group>"; };
+		66E020D42086E0F9000E1A80 /* YXModalWeChatInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		66E020D62086E10D000E1A80 /* YXModalWeChatInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
+		66E020D82086E128000E1A80 /* YXModalWeChatPercentDrivenInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalWeChatPercentDrivenInteractive.swift; sourceTree = "<group>"; };
+		66ECE813208047CD00EB2B87 /* YXCustomTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXCustomTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ECE816208047CD00EB2B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66ECE81B208047CD00EB2B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66ECE81D208047D000EB2B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66ECE820208047D000EB2B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66ECE822208047D000EB2B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ECE827208047D100EB2B87 /* YXCustomTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXCustomTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ECE82B208047D100EB2B87 /* YXCustomTransitionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXCustomTransitionDemoTests.swift; sourceTree = "<group>"; };
+		66ECE82D208047D100EB2B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ECE832208047D100EB2B87 /* YXCustomTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXCustomTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ECE836208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXCustomTransitionDemoUITests.swift; sourceTree = "<group>"; };
+		66ECE838208047D100EB2B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66F6FB2E1033402D5BA7CE0 /* Pods_YXCustomTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXCustomTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBAFE33A67331732062D71A /* Pods-YXCustomTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXCustomTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66ECE810208047CD00EB2B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D8C5810D362DA93AE1021 /* Pods_YXCustomTransitionDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE824208047D100EB2B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE82F208047D100EB2B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661792D420805A8200D69E07 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				661792D520805A8D00D69E07 /* Nav-CATransition */,
+				66A8977B20847F5F007B8AC3 /* Modal-CATransition */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		661792D520805A8D00D69E07 /* Nav-CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				6617930F20805BD300D69E07 /* YXNavCATransitionFirstViewController.swift */,
+				6617931120805C3700D69E07 /* YXNavCATransitionSecondViewController.swift */,
+			);
+			path = "Nav-CATransition";
+			sourceTree = "<group>";
+		};
+		661792D620805ACB00D69E07 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				661792D720805ACB00D69E07 /* back@2x.png */,
+				661792D820805ACB00D69E07 /* Base.png */,
+				661792D920805ACB00D69E07 /* CATransition.png */,
+				661792DA20805ACB00D69E07 /* content.png */,
+				661792DB20805ACB00D69E07 /* Expression */,
+				661792E720805ACB00D69E07 /* flip.png */,
+				661792E820805ACB00D69E07 /* kugoou.png */,
+				661792E920805ACB00D69E07 /* kugou-Interactive.jpeg */,
+				661792EA20805ACB00D69E07 /* nodata.png */,
+				661792EB20805ACB00D69E07 /* Wechat-Interactive.jpeg */,
+				661792EC20805ACB00D69E07 /* wechat.jpg */,
+				661792ED20805ACB00D69E07 /* 美女与豪车 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		661792DB20805ACB00D69E07 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				661792DC20805ACB00D69E07 /* Expression01.jpeg */,
+				661792DD20805ACB00D69E07 /* Expression02.jpeg */,
+				661792DE20805ACB00D69E07 /* Expression03.jpeg */,
+				661792DF20805ACB00D69E07 /* Expression04.jpeg */,
+				661792E020805ACB00D69E07 /* Expression05.jpeg */,
+				661792E120805ACB00D69E07 /* Expression06.jpeg */,
+				661792E220805ACB00D69E07 /* Expression07.jpeg */,
+				661792E320805ACB00D69E07 /* Expression08.jpeg */,
+				661792E420805ACB00D69E07 /* Expression09.jpeg */,
+				661792E520805ACB00D69E07 /* Expression10.jpeg */,
+				661792E620805ACB00D69E07 /* Expression11.jpeg */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		661792ED20805ACB00D69E07 /* 美女与豪车 */ = {
+			isa = PBXGroup;
+			children = (
+				661792EE20805ACB00D69E07 /* BeautyCar01.jpg */,
+				661792EF20805ACB00D69E07 /* BeautyCar02.jpg */,
+				661792F020805ACB00D69E07 /* BeautyCar03.jpg */,
+				661792F120805ACB00D69E07 /* BeautyCar04.jpg */,
+				661792F220805ACB00D69E07 /* BeautyCar05.jpg */,
+			);
+			path = "美女与豪车";
+			sourceTree = "<group>";
+		};
+		6617930E20805AE100D69E07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66ECE81A208047CD00EB2B87 /* Main.storyboard */,
+				66ECE81D208047D000EB2B87 /* Assets.xcassets */,
+				66ECE81F208047D000EB2B87 /* LaunchScreen.storyboard */,
+				66ECE822208047D000EB2B87 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		664A5CB72088277F009A4640 /* Net-Friends-Questions */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CB920882790009A4640 /* Questions-one */,
+				664A5CB82088278D009A4640 /* Questions-two */,
+			);
+			path = "Net-Friends-Questions";
+			sourceTree = "<group>";
+		};
+		664A5CB82088278D009A4640 /* Questions-two */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CD020886E58009A4640 /* YXQuestionTwoFirstViewController.swift */,
+				664A5CD220886E7D009A4640 /* YXQuestionTwoSecondViewController.swift */,
+				664A5CD420886E94009A4640 /* YXQuestionTwoAnimationTransition.swift */,
+				664A5CD620886EAD009A4640 /* YXQuestionTwoPushAnimator.swift */,
+				664A5CD820886EBA009A4640 /* YXQuestionTwoPopAnimator.swift */,
+			);
+			path = "Questions-two";
+			sourceTree = "<group>";
+		};
+		664A5CB920882790009A4640 /* Questions-one */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CBA208827BC009A4640 /* YXQuestionsOneFirstViewController.swift */,
+				664A5CBC208827CC009A4640 /* YXQuestionsOneSecondViewController.swift */,
+				664A5CBE208827E6009A4640 /* YXQuestionOneCell.swift */,
+				664A5CC0208827FB009A4640 /* YXQuestionsOneAnimationTrasition.swift */,
+				664A5CC22088280B009A4640 /* YXQuestionsOnePushAnimator.swift */,
+				664A5CC42088281A009A4640 /* YXQuestionsOnePopAnimator.swift */,
+			);
+			path = "Questions-one";
+			sourceTree = "<group>";
+		};
+		664A5CDF208888BC009A4640 /* PictureBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CE620888956009A4640 /* YXPictureFirstViewController.swift */,
+				664A5CE8208889F8009A4640 /* YXPictureFirstPageCell.swift */,
+				664A5CE02088890E009A4640 /* YXPictureBrowse */,
+			);
+			path = PictureBrowse;
+			sourceTree = "<group>";
+		};
+		664A5CE02088890E009A4640 /* YXPictureBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CE420888926009A4640 /* Controller */,
+				664A5CE320888924009A4640 /* Model */,
+				664A5CE120888917009A4640 /* View */,
+				664A5CE520888935009A4640 /* Transition */,
+			);
+			path = YXPictureBrowse;
+			sourceTree = "<group>";
+		};
+		664A5CE120888917009A4640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CF320888CE9009A4640 /* YXPictureBrowserCell.swift */,
+				664A5CF520888D08009A4640 /* YXBrowseZoomScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		664A5CE320888924009A4640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CF120888CBF009A4640 /* YXPictureBrowseSouceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		664A5CE420888926009A4640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CEF20888C81009A4640 /* YXPictureBrowseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		664A5CE520888935009A4640 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				664A5CF720888D43009A4640 /* YXPictureBrowseTransitionParameter.swift */,
+				664A5CF920888D64009A4640 /* YXPictureBrowseInteractiveAnimatedTransition.swift */,
+				664A5CFB20888D77009A4640 /* YXPictureBrowsePercentDrivenInteractive.swift */,
+				664A5CFD20888D8B009A4640 /* YXPictureBrowsePushAnimator.swift */,
+				664A5CFF20888D9C009A4640 /* YXPictureBrowsePopAnimator.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		666BA03420858FEB00C9C466 /* Nav-WeChatTransiton */ = {
+			isa = PBXGroup;
+			children = (
+				666BA03B2085905900C9C466 /* YXNavWeChatViewController.swift */,
+				666BA03D2085906800C9C466 /* YXNavWeChatSecondViewController.swift */,
+				666BA0392085904700C9C466 /* YXNavWeChatAnimationTransition.swift */,
+				666BA0352085902200C9C466 /* YXNavWeChatPushAnimator.swift */,
+				666BA0372085903200C9C466 /* YXNavWeChatPopAnimator.swift */,
+			);
+			path = "Nav-WeChatTransiton";
+			sourceTree = "<group>";
+		};
+		666BA03F20859FB300C9C466 /* Nav-Base-InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				666BA04020859FF300C9C466 /* YXNavBaseInteractiveFirstViewController.swift */,
+				666BA0422085A00F00C9C466 /* YXNavBaseInteractiveSecondViewController.swift */,
+				666BA0442085A03500C9C466 /* YXNavBaseInteractiveAnimatedTransition.swift */,
+				666BA0462085A07D00C9C466 /* YXNavBasePercentDerivenInteractive.swift */,
+			);
+			path = "Nav-Base-InteractiveTransition";
+			sourceTree = "<group>";
+		};
+		666BA0482085EE8700C9C466 /* Nav-KuGou-InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				666BA0492085EEAB00C9C466 /* YXNavKuGouInteractiveViewController.swift */,
+				666BA04B2085EED200C9C466 /* YXNavKuGouInteractiveSecondViewController.swift */,
+				666BA04D2085EF0100C9C466 /* YXNavKuGouInteractiveAnimatedTransition.swift */,
+				666BA04F2085EF1C00C9C466 /* YXNavKuGouPercentDerivenInteractive.swift */,
+			);
+			path = "Nav-KuGou-InteractiveTransition";
+			sourceTree = "<group>";
+		};
+		666BA0512085FA0F00C9C466 /* Nav-WeChat-InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				666BA05A2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift */,
+				666BA05C2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift */,
+				666BA0582085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift */,
+				666BA0562085FA7900C9C466 /* YXNavWeChatPercentDrivenInteractive.swift */,
+				666BA0522085FA5300C9C466 /* YXNavWeChatInteractivePushAnimator.swift */,
+				666BA0542085FA6600C9C466 /* YXNavWeChatInteractivePopAnimator.swift */,
+			);
+			path = "Nav-WeChat-InteractiveTransition";
+			sourceTree = "<group>";
+		};
+		66A8977B20847F5F007B8AC3 /* Modal-CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				66A8977C20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift */,
+				66A8977E20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift */,
+			);
+			path = "Modal-CATransition";
+			sourceTree = "<group>";
+		};
+		66A897802084820A007B8AC3 /* Navigation-Transition */ = {
+			isa = PBXGroup;
+			children = (
+				66A8978120848223007B8AC3 /* Nav-BaseTransition */,
+				66A8978820849457007B8AC3 /* Nav-KuGouTransiton */,
+				666BA03420858FEB00C9C466 /* Nav-WeChatTransiton */,
+				666BA03F20859FB300C9C466 /* Nav-Base-InteractiveTransition */,
+				666BA0482085EE8700C9C466 /* Nav-KuGou-InteractiveTransition */,
+				666BA0512085FA0F00C9C466 /* Nav-WeChat-InteractiveTransition */,
+			);
+			path = "Navigation-Transition";
+			sourceTree = "<group>";
+		};
+		66A8978120848223007B8AC3 /* Nav-BaseTransition */ = {
+			isa = PBXGroup;
+			children = (
+				66A897822084827F007B8AC3 /* YXNavBaseFirstViewController.swift */,
+				66A8978420848293007B8AC3 /* YXNavBaseSecondViewController.swift */,
+				66A89786208482CA007B8AC3 /* YXNavBaseCustomAnimator.swift */,
+			);
+			path = "Nav-BaseTransition";
+			sourceTree = "<group>";
+		};
+		66A8978820849457007B8AC3 /* Nav-KuGouTransiton */ = {
+			isa = PBXGroup;
+			children = (
+				66A8978920849482007B8AC3 /* YXNavKuGouTransitionViewController.swift */,
+				66A8978B20849498007B8AC3 /* YXNavKuGouSecondViewController.swift */,
+				66A8978F208494BF007B8AC3 /* YXNavKuGouAnimationTransition.swift */,
+				66A8978D208494AF007B8AC3 /* YXNavKuGouPushAnimator.swift */,
+				66A89791208494CF007B8AC3 /* YXNavKuGouPopAnimator.swift */,
+			);
+			path = "Nav-KuGouTransiton";
+			sourceTree = "<group>";
+		};
+		66E020B42086D5BE000E1A80 /* Modal-Transition */ = {
+			isa = PBXGroup;
+			children = (
+				66E020B52086D5CE000E1A80 /* Modal-Base */,
+				66E020BD2086D860000E1A80 /* Modal-KuGou */,
+				66E020BC2086D859000E1A80 /* Modal-KuGou-Interactive */,
+				66E020BB2086D857000E1A80 /* Modal-WeChat */,
+				66E020BA2086D853000E1A80 /* Modal-WeChat-Interactive */,
+			);
+			path = "Modal-Transition";
+			sourceTree = "<group>";
+		};
+		66E020B52086D5CE000E1A80 /* Modal-Base */ = {
+			isa = PBXGroup;
+			children = (
+				66E020B62086D605000E1A80 /* YXModalBaseViewController.swift */,
+				66E020B82086D619000E1A80 /* YXModalBaseSecondViewController.swift */,
+			);
+			path = "Modal-Base";
+			sourceTree = "<group>";
+		};
+		66E020BA2086D853000E1A80 /* Modal-WeChat-Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				66E020D22086E0EC000E1A80 /* YXModalWeChatInteractiveViewController.swift */,
+				66E020D42086E0F9000E1A80 /* YXModalWeChatInteractiveSecondViewController.swift */,
+				66E020D62086E10D000E1A80 /* YXModalWeChatInteractiveAnimatedTransition.swift */,
+				66E020D82086E128000E1A80 /* YXModalWeChatPercentDrivenInteractive.swift */,
+			);
+			path = "Modal-WeChat-Interactive";
+			sourceTree = "<group>";
+		};
+		66E020BB2086D857000E1A80 /* Modal-WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				66E020CC2086DE4A000E1A80 /* YXModalWeChatViewController.swift */,
+				66E020CE2086DE64000E1A80 /* YXModalWeChatSecondViewController.swift */,
+				66E020D02086DE80000E1A80 /* YXModalWeChatAnimationTransition.swift */,
+			);
+			path = "Modal-WeChat";
+			sourceTree = "<group>";
+		};
+		66E020BC2086D859000E1A80 /* Modal-KuGou-Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				66E020C42086DA52000E1A80 /* YXModalKuGouInteractiveViewController.swift */,
+				66E020C62086DA67000E1A80 /* YXModalKuGouInteractiveSecondViewController.swift */,
+				66E020C82086DA81000E1A80 /* YXModalKuGouInteractiveAnimatedTransition.swift */,
+				66E020CA2086DA97000E1A80 /* YXModalKuGouPercentDerivenInteractive.swift */,
+			);
+			path = "Modal-KuGou-Interactive";
+			sourceTree = "<group>";
+		};
+		66E020BD2086D860000E1A80 /* Modal-KuGou */ = {
+			isa = PBXGroup;
+			children = (
+				66E020BE2086D89E000E1A80 /* YXModalKuGouViewController.swift */,
+				66E020C02086D8AC000E1A80 /* YXModalKuGouSecondViewController.swift */,
+				66E020C22086D8BD000E1A80 /* YXModalKuGouAnimationTransition.swift */,
+			);
+			path = "Modal-KuGou";
+			sourceTree = "<group>";
+		};
+		66ECE80A208047CD00EB2B87 = {
+			isa = PBXGroup;
+			children = (
+				66ECE815208047CD00EB2B87 /* YXCustomTransitionDemo */,
+				66ECE82A208047D100EB2B87 /* YXCustomTransitionDemoTests */,
+				66ECE835208047D100EB2B87 /* YXCustomTransitionDemoUITests */,
+				66ECE814208047CD00EB2B87 /* Products */,
+				B56FE4B45FFCFBE5852AC04A /* Pods */,
+				F4247275D23AD9187D3E4D95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66ECE814208047CD00EB2B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66ECE813208047CD00EB2B87 /* YXCustomTransitionDemo.app */,
+				66ECE827208047D100EB2B87 /* YXCustomTransitionDemoTests.xctest */,
+				66ECE832208047D100EB2B87 /* YXCustomTransitionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66ECE815208047CD00EB2B87 /* YXCustomTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				66ECE816208047CD00EB2B87 /* AppDelegate.swift */,
+				661637E120804C7300794ED1 /* YXConst.swift */,
+				661637E320804D5100794ED1 /* UIKit+Extension.swift */,
+				661637E520804E5600794ED1 /* YXTransitionHomeViewController.swift */,
+				661792D420805A8200D69E07 /* CATransition */,
+				66A897802084820A007B8AC3 /* Navigation-Transition */,
+				66E020B42086D5BE000E1A80 /* Modal-Transition */,
+				664A5CB72088277F009A4640 /* Net-Friends-Questions */,
+				664A5CDF208888BC009A4640 /* PictureBrowse */,
+				661792D620805ACB00D69E07 /* Resource */,
+				6617930E20805AE100D69E07 /* Supporting Files */,
+			);
+			path = YXCustomTransitionDemo;
+			sourceTree = "<group>";
+		};
+		66ECE82A208047D100EB2B87 /* YXCustomTransitionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				66ECE82B208047D100EB2B87 /* YXCustomTransitionDemoTests.swift */,
+				66ECE82D208047D100EB2B87 /* Info.plist */,
+			);
+			path = YXCustomTransitionDemoTests;
+			sourceTree = "<group>";
+		};
+		66ECE835208047D100EB2B87 /* YXCustomTransitionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66ECE836208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift */,
+				66ECE838208047D100EB2B87 /* Info.plist */,
+			);
+			path = YXCustomTransitionDemoUITests;
+			sourceTree = "<group>";
+		};
+		B56FE4B45FFCFBE5852AC04A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47AC05B8168EAD143B4FA22D /* Pods-YXCustomTransitionDemo.debug.xcconfig */,
+				FDBAFE33A67331732062D71A /* Pods-YXCustomTransitionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4247275D23AD9187D3E4D95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66F6FB2E1033402D5BA7CE0 /* Pods_YXCustomTransitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66ECE812208047CD00EB2B87 /* YXCustomTransitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ECE83B208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemo" */;
+			buildPhases = (
+				639A1D7C5E1EE24A0A522DC7 /* [CP] Check Pods Manifest.lock */,
+				66ECE80F208047CD00EB2B87 /* Sources */,
+				66ECE810208047CD00EB2B87 /* Frameworks */,
+				66ECE811208047CD00EB2B87 /* Resources */,
+				EB07D5BEF80CC1BF9BFD31A1 /* [CP] Embed Pods Frameworks */,
+				DAD6D5DEFF428A2F09A5125E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXCustomTransitionDemo;
+			productName = YXCustomTransitionDemo;
+			productReference = 66ECE813208047CD00EB2B87 /* YXCustomTransitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66ECE826208047D100EB2B87 /* YXCustomTransitionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ECE83E208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemoTests" */;
+			buildPhases = (
+				66ECE823208047D100EB2B87 /* Sources */,
+				66ECE824208047D100EB2B87 /* Frameworks */,
+				66ECE825208047D100EB2B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66ECE829208047D100EB2B87 /* PBXTargetDependency */,
+			);
+			name = YXCustomTransitionDemoTests;
+			productName = YXCustomTransitionDemoTests;
+			productReference = 66ECE827208047D100EB2B87 /* YXCustomTransitionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66ECE831208047D100EB2B87 /* YXCustomTransitionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ECE841208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemoUITests" */;
+			buildPhases = (
+				66ECE82E208047D100EB2B87 /* Sources */,
+				66ECE82F208047D100EB2B87 /* Frameworks */,
+				66ECE830208047D100EB2B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66ECE834208047D100EB2B87 /* PBXTargetDependency */,
+			);
+			name = YXCustomTransitionDemoUITests;
+			productName = YXCustomTransitionDemoUITests;
+			productReference = 66ECE832208047D100EB2B87 /* YXCustomTransitionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66ECE80B208047CD00EB2B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YX;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "蔡志文";
+				TargetAttributes = {
+					66ECE812208047CD00EB2B87 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					66ECE826208047D100EB2B87 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 66ECE812208047CD00EB2B87;
+					};
+					66ECE831208047D100EB2B87 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 66ECE812208047CD00EB2B87;
+					};
+				};
+			};
+			buildConfigurationList = 66ECE80E208047CD00EB2B87 /* Build configuration list for PBXProject "YXCustomTransitionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66ECE80A208047CD00EB2B87;
+			productRefGroup = 66ECE814208047CD00EB2B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66ECE812208047CD00EB2B87 /* YXCustomTransitionDemo */,
+				66ECE826208047D100EB2B87 /* YXCustomTransitionDemoTests */,
+				66ECE831208047D100EB2B87 /* YXCustomTransitionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66ECE811208047CD00EB2B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ECE821208047D000EB2B87 /* LaunchScreen.storyboard in Resources */,
+				661792FC20805ACB00D69E07 /* Expression06.jpeg in Resources */,
+				6617930B20805ACB00D69E07 /* BeautyCar04.jpg in Resources */,
+				661792F320805ACB00D69E07 /* back@2x.png in Resources */,
+				6617930020805ACB00D69E07 /* Expression10.jpeg in Resources */,
+				661792F920805ACB00D69E07 /* Expression03.jpeg in Resources */,
+				661792F620805ACB00D69E07 /* content.png in Resources */,
+				6617930920805ACB00D69E07 /* BeautyCar02.jpg in Resources */,
+				6617930420805ACB00D69E07 /* kugou-Interactive.jpeg in Resources */,
+				6617930A20805ACB00D69E07 /* BeautyCar03.jpg in Resources */,
+				661792F420805ACB00D69E07 /* Base.png in Resources */,
+				661792FD20805ACB00D69E07 /* Expression07.jpeg in Resources */,
+				661792FE20805ACB00D69E07 /* Expression08.jpeg in Resources */,
+				6617930820805ACB00D69E07 /* BeautyCar01.jpg in Resources */,
+				661792F820805ACB00D69E07 /* Expression02.jpeg in Resources */,
+				66ECE81E208047D000EB2B87 /* Assets.xcassets in Resources */,
+				661792F520805ACB00D69E07 /* CATransition.png in Resources */,
+				6617930220805ACB00D69E07 /* flip.png in Resources */,
+				661792F720805ACB00D69E07 /* Expression01.jpeg in Resources */,
+				6617930620805ACB00D69E07 /* Wechat-Interactive.jpeg in Resources */,
+				6617930120805ACB00D69E07 /* Expression11.jpeg in Resources */,
+				6617930320805ACB00D69E07 /* kugoou.png in Resources */,
+				6617930C20805ACB00D69E07 /* BeautyCar05.jpg in Resources */,
+				661792FA20805ACB00D69E07 /* Expression04.jpeg in Resources */,
+				6617930520805ACB00D69E07 /* nodata.png in Resources */,
+				661792FB20805ACB00D69E07 /* Expression05.jpeg in Resources */,
+				6617930720805ACB00D69E07 /* wechat.jpg in Resources */,
+				661792FF20805ACB00D69E07 /* Expression09.jpeg in Resources */,
+				66ECE81C208047CD00EB2B87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE825208047D100EB2B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE830208047D100EB2B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		639A1D7C5E1EE24A0A522DC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YXCustomTransitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD6D5DEFF428A2F09A5125E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB07D5BEF80CC1BF9BFD31A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66ECE80F208047CD00EB2B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664A5CC32088280B009A4640 /* YXQuestionsOnePushAnimator.swift in Sources */,
+				66E020C72086DA67000E1A80 /* YXModalKuGouInteractiveSecondViewController.swift in Sources */,
+				666BA04A2085EEAB00C9C466 /* YXNavKuGouInteractiveViewController.swift in Sources */,
+				666BA0472085A07D00C9C466 /* YXNavBasePercentDerivenInteractive.swift in Sources */,
+				664A5CC1208827FB009A4640 /* YXQuestionsOneAnimationTrasition.swift in Sources */,
+				66E020CB2086DA97000E1A80 /* YXModalKuGouPercentDerivenInteractive.swift in Sources */,
+				666BA0532085FA5300C9C466 /* YXNavWeChatInteractivePushAnimator.swift in Sources */,
+				664A5CFC20888D77009A4640 /* YXPictureBrowsePercentDrivenInteractive.swift in Sources */,
+				664A5CD720886EAD009A4640 /* YXQuestionTwoPushAnimator.swift in Sources */,
+				66E020CF2086DE64000E1A80 /* YXModalWeChatSecondViewController.swift in Sources */,
+				664A5CFE20888D8B009A4640 /* YXPictureBrowsePushAnimator.swift in Sources */,
+				664A5D0020888D9C009A4640 /* YXPictureBrowsePopAnimator.swift in Sources */,
+				664A5CE9208889F8009A4640 /* YXPictureFirstPageCell.swift in Sources */,
+				666BA03E2085906800C9C466 /* YXNavWeChatSecondViewController.swift in Sources */,
+				664A5CF820888D43009A4640 /* YXPictureBrowseTransitionParameter.swift in Sources */,
+				664A5CD120886E58009A4640 /* YXQuestionTwoFirstViewController.swift in Sources */,
+				66E020D72086E10D000E1A80 /* YXModalWeChatInteractiveAnimatedTransition.swift in Sources */,
+				666BA0592085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift in Sources */,
+				66E020D52086E0F9000E1A80 /* YXModalWeChatInteractiveSecondViewController.swift in Sources */,
+				66A8977F20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift in Sources */,
+				664A5CF420888CE9009A4640 /* YXPictureBrowserCell.swift in Sources */,
+				664A5CF020888C81009A4640 /* YXPictureBrowseViewController.swift in Sources */,
+				666BA0362085902200C9C466 /* YXNavWeChatPushAnimator.swift in Sources */,
+				666BA0552085FA6600C9C466 /* YXNavWeChatInteractivePopAnimator.swift in Sources */,
+				66E020C52086DA52000E1A80 /* YXModalKuGouInteractiveViewController.swift in Sources */,
+				66E020CD2086DE4A000E1A80 /* YXModalWeChatViewController.swift in Sources */,
+				666BA0502085EF1C00C9C466 /* YXNavKuGouPercentDerivenInteractive.swift in Sources */,
+				66A89792208494CF007B8AC3 /* YXNavKuGouPopAnimator.swift in Sources */,
+				666BA04C2085EED200C9C466 /* YXNavKuGouInteractiveSecondViewController.swift in Sources */,
+				666BA0432085A00F00C9C466 /* YXNavBaseInteractiveSecondViewController.swift in Sources */,
+				664A5CF220888CBF009A4640 /* YXPictureBrowseSouceModel.swift in Sources */,
+				66A89787208482CA007B8AC3 /* YXNavBaseCustomAnimator.swift in Sources */,
+				664A5CC52088281A009A4640 /* YXQuestionsOnePopAnimator.swift in Sources */,
+				666BA04E2085EF0100C9C466 /* YXNavKuGouInteractiveAnimatedTransition.swift in Sources */,
+				66E020D92086E128000E1A80 /* YXModalWeChatPercentDrivenInteractive.swift in Sources */,
+				666BA0572085FA7900C9C466 /* YXNavWeChatPercentDrivenInteractive.swift in Sources */,
+				664A5CBB208827BC009A4640 /* YXQuestionsOneFirstViewController.swift in Sources */,
+				66A8978C20849498007B8AC3 /* YXNavKuGouSecondViewController.swift in Sources */,
+				666BA04120859FF300C9C466 /* YXNavBaseInteractiveFirstViewController.swift in Sources */,
+				664A5CE720888956009A4640 /* YXPictureFirstViewController.swift in Sources */,
+				6617931220805C3700D69E07 /* YXNavCATransitionSecondViewController.swift in Sources */,
+				664A5CD520886E94009A4640 /* YXQuestionTwoAnimationTransition.swift in Sources */,
+				66E020C92086DA81000E1A80 /* YXModalKuGouInteractiveAnimatedTransition.swift in Sources */,
+				66A89790208494BF007B8AC3 /* YXNavKuGouAnimationTransition.swift in Sources */,
+				661637E620804E5600794ED1 /* YXTransitionHomeViewController.swift in Sources */,
+				66E020C32086D8BD000E1A80 /* YXModalKuGouAnimationTransition.swift in Sources */,
+				664A5CBF208827E6009A4640 /* YXQuestionOneCell.swift in Sources */,
+				66A897832084827F007B8AC3 /* YXNavBaseFirstViewController.swift in Sources */,
+				666BA0452085A03500C9C466 /* YXNavBaseInteractiveAnimatedTransition.swift in Sources */,
+				66E020B72086D605000E1A80 /* YXModalBaseViewController.swift in Sources */,
+				666BA03A2085904700C9C466 /* YXNavWeChatAnimationTransition.swift in Sources */,
+				66ECE817208047CD00EB2B87 /* AppDelegate.swift in Sources */,
+				66A8978E208494AF007B8AC3 /* YXNavKuGouPushAnimator.swift in Sources */,
+				66A8978A20849482007B8AC3 /* YXNavKuGouTransitionViewController.swift in Sources */,
+				661637E420804D5100794ED1 /* UIKit+Extension.swift in Sources */,
+				664A5CFA20888D64009A4640 /* YXPictureBrowseInteractiveAnimatedTransition.swift in Sources */,
+				66E020BF2086D89E000E1A80 /* YXModalKuGouViewController.swift in Sources */,
+				664A5CD320886E7D009A4640 /* YXQuestionTwoSecondViewController.swift in Sources */,
+				664A5CF620888D08009A4640 /* YXBrowseZoomScrollView.swift in Sources */,
+				666BA05D2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift in Sources */,
+				66E020D12086DE80000E1A80 /* YXModalWeChatAnimationTransition.swift in Sources */,
+				664A5CBD208827CC009A4640 /* YXQuestionsOneSecondViewController.swift in Sources */,
+				661637E220804C7300794ED1 /* YXConst.swift in Sources */,
+				66E020B92086D619000E1A80 /* YXModalBaseSecondViewController.swift in Sources */,
+				66E020C12086D8AC000E1A80 /* YXModalKuGouSecondViewController.swift in Sources */,
+				6617931020805BD300D69E07 /* YXNavCATransitionFirstViewController.swift in Sources */,
+				666BA0382085903200C9C466 /* YXNavWeChatPopAnimator.swift in Sources */,
+				664A5CD920886EBA009A4640 /* YXQuestionTwoPopAnimator.swift in Sources */,
+				66A8978520848293007B8AC3 /* YXNavBaseSecondViewController.swift in Sources */,
+				66A8977D20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift in Sources */,
+				666BA05B2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift in Sources */,
+				66E020D32086E0EC000E1A80 /* YXModalWeChatInteractiveViewController.swift in Sources */,
+				666BA03C2085905900C9C466 /* YXNavWeChatViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE823208047D100EB2B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ECE82C208047D100EB2B87 /* YXCustomTransitionDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ECE82E208047D100EB2B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ECE837208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66ECE829208047D100EB2B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66ECE812208047CD00EB2B87 /* YXCustomTransitionDemo */;
+			targetProxy = 66ECE828208047D100EB2B87 /* PBXContainerItemProxy */;
+		};
+		66ECE834208047D100EB2B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66ECE812208047CD00EB2B87 /* YXCustomTransitionDemo */;
+			targetProxy = 66ECE833208047D100EB2B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66ECE81A208047CD00EB2B87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66ECE81B208047CD00EB2B87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66ECE81F208047D000EB2B87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66ECE820208047D000EB2B87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66ECE839208047D100EB2B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66ECE83A208047D100EB2B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66ECE83C208047D100EB2B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AC05B8168EAD143B4FA22D /* Pods-YXCustomTransitionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = "$(SRCROOT)/YXCustomTransitionDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		66ECE83D208047D100EB2B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBAFE33A67331732062D71A /* Pods-YXCustomTransitionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = "$(SRCROOT)/YXCustomTransitionDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		66ECE83F208047D100EB2B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = YXCustomTransitionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXCustomTransitionDemo.app/YXCustomTransitionDemo";
+			};
+			name = Debug;
+		};
+		66ECE840208047D100EB2B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = YXCustomTransitionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXCustomTransitionDemo.app/YXCustomTransitionDemo";
+			};
+			name = Release;
+		};
+		66ECE842208047D100EB2B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = YXCustomTransitionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YXCustomTransitionDemo;
+			};
+			name = Debug;
+		};
+		66ECE843208047D100EB2B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNFF993F7H;
+				INFOPLIST_FILE = YXCustomTransitionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YXCustomTransitionDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66ECE80E208047CD00EB2B87 /* Build configuration list for PBXProject "YXCustomTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ECE839208047D100EB2B87 /* Debug */,
+				66ECE83A208047D100EB2B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ECE83B208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ECE83C208047D100EB2B87 /* Debug */,
+				66ECE83D208047D100EB2B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ECE83E208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ECE83F208047D100EB2B87 /* Debug */,
+				66ECE840208047D100EB2B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ECE841208047D100EB2B87 /* Build configuration list for PBXNativeTarget "YXCustomTransitionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ECE842208047D100EB2B87 /* Debug */,
+				66ECE843208047D100EB2B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66ECE80B208047CD00EB2B87 /* Project object */;
+}

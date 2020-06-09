@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  YXCustomTransitionDemo
+//  CustomTransitionDemo
 //
 //  Created by 蔡志文 on 2018/4/13.
 //  Copyright © 2018年 蔡志文. All rights reserved.
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        let nav = UINavigationController(rootViewController: YXTransitionHomeViewController())
+        let nav = UINavigationController(rootViewController: TransitionHomeViewController())
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         

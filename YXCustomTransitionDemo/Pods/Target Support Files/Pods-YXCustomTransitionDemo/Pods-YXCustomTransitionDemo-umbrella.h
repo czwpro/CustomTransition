@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_YXCustomTransitionDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_YXCustomTransitionDemoVersionString[];
+FOUNDATION_EXPORT double Pods_CustomTransitionDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CustomTransitionDemoVersionString[];
 

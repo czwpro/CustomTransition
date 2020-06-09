@@ -1,15 +1,15 @@
 //
-//  YXCustomTransitionDemoTests.swift
-//  YXCustomTransitionDemoTests
+//  CustomTransitionDemoTests.swift
+//  CustomTransitionDemoTests
 //
 //  Created by 蔡志文 on 2018/4/13.
 //  Copyright © 2018年 蔡志文. All rights reserved.
 //
 
 import XCTest
-@testable import YXCustomTransitionDemo
+@testable import CustomTransitionDemo
 
-class YXCustomTransitionDemoTests: XCTestCase {
+class CustomTransitionDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

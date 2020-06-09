@@ -12,4 +12,7 @@ let screenSize = UIScreen.main.bounds.size
 let screenWidth = UIScreen.main.bounds.size.width
 let screenHeight = UIScreen.main.bounds.size.height
 
+let statusBarHeight: CGFloat  = UIApplication.shared.statusBarFrame.size.height
+let navigationBarHeight: CGFloat = 44.0
+let navigationBarAndStatusBarHeight = statusBarHeight + navigationBarHeight
 

@@ -15,7 +15,7 @@ class YXNavBaseInteractiveAnimatedTransition: NSObject, UINavigationControllerDe
     lazy var customAnimator = YXNavBaseCustomAnimator()
     lazy var percentIntractive = YXNavBasePercentDerivenInteractive(gestureRecognizer: self.gestureRecognizer!)
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == .push {
             return customAnimator
         } else if operation == .pop {

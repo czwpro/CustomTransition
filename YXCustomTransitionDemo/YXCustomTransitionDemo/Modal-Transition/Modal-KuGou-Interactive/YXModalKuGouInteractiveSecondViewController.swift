@@ -26,13 +26,13 @@ class YXModalKuGouInteractiveSecondViewController: UIViewController {
     }()
     
     let navView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 64))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: navigationBarAndStatusBarHeight))
         view.backgroundColor = UIColor.white
         return view
     }()
     
     let backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 10, y: 20, width: 44, height: 44))
+        let button = UIButton(frame: CGRect(x: 10, y: statusBarHeight, width: 44, height: 44))
         button.setTitle("返回", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
@@ -57,7 +57,7 @@ class YXModalKuGouInteractiveSecondViewController: UIViewController {
         
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
         
-        var scale = 1 - fabs(translation.x / screenWidth)
+        var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
         
         print("second = \(scale)")
@@ -74,6 +74,8 @@ class YXModalKuGouInteractiveSecondViewController: UIViewController {
         case .changed: break
         case .failed, .cancelled, .ended:
             animatedTransition.gestureRecognizer = nil
+        @unknown default: break
+            
         }
         
     }

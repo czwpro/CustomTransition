@@ -55,15 +55,20 @@ class YXPictureBrowserCell: UICollectionViewCell {
         if let image = model.image {
             imageView.image = image
         } else if let imgUrlThumb = model.imgUrl_thumb, imgUrlThumb.count > 0 {
-            imageView.kf.setImage(with: URL(string: model.imgUrl!), placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: { (image, error, cacheType, imageURL) in
-                self.setPictureImage(image: image!)
-            })
+            imageView.kf.setImage(with: URL(string: model.imgUrl!), placeholder: placeholderImage, options: nil, progressBlock: nil) { result in
+                if case let Result.success(success) = result {
+                    self.setPictureImage(image: success.image)
+                }
+            }
         }
         
         if let imgUrl = model.imgUrl {
-            imageView.kf.setImage(with: URL(string: imgUrl), placeholder: placeholderImage, options: nil, progressBlock: nil) { (image, error, _, _) in
-                self.setPictureImage(image: image!)
+            imageView.kf.setImage(with: URL(string: imgUrl), placeholder: placeholderImage, options: nil, progressBlock: nil) { result in
+                if case let Result.success(success) = result {
+                    self.setPictureImage(image: success.image)
+                }
             }
+   
         }
     }
     

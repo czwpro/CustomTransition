@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -205,6 +205,7 @@
 		666BA0582085FA8E00C9C466 /* YXNavWeChatInteractiveAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveAnimatedTransition.swift; sourceTree = "<group>"; };
 		666BA05A2085FACB00C9C466 /* YXNavWeChatInteractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveViewController.swift; sourceTree = "<group>"; };
 		666BA05C2085FAE000C9C466 /* YXNavWeChatInteractiveSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavWeChatInteractiveSecondViewController.swift; sourceTree = "<group>"; };
+		6688EF02248B2ED00044D092 /* ViewControllerTransition.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ViewControllerTransition.md; sourceTree = "<group>"; };
 		66A8977C20847F8B007B8AC3 /* YXModalCATransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalCATransitionFirstViewController.swift; sourceTree = "<group>"; };
 		66A8977E20847FA0007B8AC3 /* YXModalCATransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXModalCATransitionSecondViewController.swift; sourceTree = "<group>"; };
 		66A897822084827F007B8AC3 /* YXNavBaseFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXNavBaseFirstViewController.swift; sourceTree = "<group>"; };
@@ -539,8 +540,8 @@
 			children = (
 				66E020B52086D5CE000E1A80 /* Modal-Base */,
 				66E020BD2086D860000E1A80 /* Modal-KuGou */,
-				66E020BC2086D859000E1A80 /* Modal-KuGou-Interactive */,
 				66E020BB2086D857000E1A80 /* Modal-WeChat */,
+				66E020BC2086D859000E1A80 /* Modal-KuGou-Interactive */,
 				66E020BA2086D853000E1A80 /* Modal-WeChat-Interactive */,
 			);
 			path = "Modal-Transition";
@@ -600,6 +601,7 @@
 		66ECE80A208047CD00EB2B87 = {
 			isa = PBXGroup;
 			children = (
+				6688EF02248B2ED00044D092 /* ViewControllerTransition.md */,
 				66ECE815208047CD00EB2B87 /* YXCustomTransitionDemo */,
 				66ECE82A208047D100EB2B87 /* YXCustomTransitionDemoTests */,
 				66ECE835208047D100EB2B87 /* YXCustomTransitionDemoUITests */,
@@ -684,7 +686,6 @@
 				66ECE810208047CD00EB2B87 /* Frameworks */,
 				66ECE811208047CD00EB2B87 /* Resources */,
 				EB07D5BEF80CC1BF9BFD31A1 /* [CP] Embed Pods Frameworks */,
-				DAD6D5DEFF428A2F09A5125E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -744,13 +745,16 @@
 				TargetAttributes = {
 					66ECE812208047CD00EB2B87 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1150;
 					};
 					66ECE826208047D100EB2B87 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1150;
 						TestTargetID = 66ECE812208047CD00EB2B87;
 					};
 					66ECE831208047D100EB2B87 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1150;
 						TestTargetID = 66ECE812208047CD00EB2B87;
 					};
 				};
@@ -847,37 +851,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DAD6D5DEFF428A2F09A5125E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EB07D5BEF80CC1BF9BFD31A1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1134,7 +1122,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SNFF993F7H;
+				DEVELOPMENT_TEAM = DTH85SS4GJ;
 				INFOPLIST_FILE = "$(SRCROOT)/YXCustomTransitionDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1143,7 +1131,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
@@ -1155,7 +1143,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SNFF993F7H;
+				DEVELOPMENT_TEAM = DTH85SS4GJ;
 				INFOPLIST_FILE = "$(SRCROOT)/YXCustomTransitionDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1164,7 +1152,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
@@ -1185,7 +1173,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXCustomTransitionDemo.app/YXCustomTransitionDemo";
 			};
@@ -1206,7 +1194,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXCustomTransitionDemo.app/YXCustomTransitionDemo";
 			};
@@ -1226,7 +1214,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YXCustomTransitionDemo;
 			};
@@ -1246,7 +1234,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = czw.YXCustomTransitionDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YXCustomTransitionDemo;
 			};

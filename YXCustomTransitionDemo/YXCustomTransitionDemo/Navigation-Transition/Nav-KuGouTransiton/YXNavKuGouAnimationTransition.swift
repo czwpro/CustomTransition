@@ -14,7 +14,7 @@ class YXNavKuGouAnimationTransition: NSObject, UINavigationControllerDelegate {
     
     lazy var customPop: YXNavKuGouPopAnimator = YXNavKuGouPopAnimator()
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == .push {
             return customPush
         } else {

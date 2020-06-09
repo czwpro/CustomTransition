@@ -21,13 +21,13 @@ class YXNavCATransitionSecondViewController: UIViewController {
     }()
     
     let navView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 64))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: navigationBarAndStatusBarHeight))
         view.backgroundColor = UIColor.white
         return view
     }()
     
     let backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 10, y: 20, width: 44, height: 44))
+        let button = UIButton(frame: CGRect(x: 10, y: statusBarHeight, width: 44, height: 44))
         button.setTitle("返回", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
@@ -47,17 +47,6 @@ class YXNavCATransitionSecondViewController: UIViewController {
         view.addSubview(navView)
         view.addSubview(backButton)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        navigationController?.isNavigationBarHidden = false
-        super .viewDidDisappear(animated)
-    }
-    
     
     @objc func backButtonAction() {
         if let controllers = navigationController?.viewControllers, controllers.count > 1 {
@@ -80,7 +69,7 @@ class YXNavCATransitionSecondViewController: UIViewController {
     func popAnimation() -> CATransition {
         let transition = CATransition()
         transition.duration = 0.8
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
         /* type
          私有API
@@ -96,12 +85,17 @@ class YXNavCATransitionSecondViewController: UIViewController {
         
         //下面四个是系统共有的API
         //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        transition.type = "pageUnCurl"
+        transition.type = convertToCATransitionType("pageUnCurl")
         
         // 转场方向
-        transition.subtype = kCATransitionFromRight
+        transition.subtype = CATransitionSubtype.fromRight
         
         return transition
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
 }

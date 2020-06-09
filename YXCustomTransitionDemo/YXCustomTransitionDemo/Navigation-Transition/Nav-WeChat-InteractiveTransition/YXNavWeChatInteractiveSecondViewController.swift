@@ -44,7 +44,7 @@ class YXNavWeChatInteractiveSecondViewController: UIViewController {
         
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
         
-        var scale = 1 - fabs(translation.x / screenWidth)
+        var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
         scale = scale > 1 ? 1 : scale
         
@@ -77,6 +77,7 @@ class YXNavWeChatInteractiveSecondViewController: UIViewController {
             animatedTransition.currentImageView = imageView
             animatedTransition.currentImageViewFrame = imageView.frame
             navigationController?.delegate = animatedTransition
+        @unknown default: break
         }
         
     }

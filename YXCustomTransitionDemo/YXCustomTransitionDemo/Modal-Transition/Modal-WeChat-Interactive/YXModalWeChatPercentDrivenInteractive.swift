@@ -85,7 +85,7 @@ class YXModalWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
         
         let translation = gesture.translation(in: gesture.view!)
         
-        var scale = 1 - fabs(translation.y / screenHeight)
+        var scale = 1 - abs(translation.y / screenHeight)
         scale = scale < 0 ? 0 : scale
         
         return scale
@@ -185,6 +185,7 @@ class YXModalWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
             imgBgWhiteView.removeFromSuperview()
             transitionImgView.removeFromSuperview()
             
+            self.transitionContext?.finishInteractiveTransition()
             let cancel = self.transitionContext!.transitionWasCancelled
             self.transitionContext?.completeTransition(!cancel)
             

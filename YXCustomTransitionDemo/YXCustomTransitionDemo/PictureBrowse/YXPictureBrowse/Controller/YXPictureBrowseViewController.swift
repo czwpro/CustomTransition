@@ -23,7 +23,7 @@ class YXPictureBrowseViewController: UIViewController {
         // 布局方式改为从上至下，默认从左到右
         flowLayout.scrollDirection = .horizontal
         // Section Inset就是某个section中cell的边界范围
-        flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        flowLayout.sectionInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         // 每行内部cell item的间距
         flowLayout.minimumInteritemSpacing = 0
         
@@ -110,6 +110,8 @@ class YXPictureBrowseViewController: UIViewController {
             animatedTransition!.transitionParameter!.transitionImage = self.imgView.image
             animatedTransition!.transitionParameter!.currentPanGestImgFrame = self.imgView.frame
             animatedTransition!.transitionParameter!.gestureRecognizer = nil
+            
+        @unknown default: break
         }
     }
 

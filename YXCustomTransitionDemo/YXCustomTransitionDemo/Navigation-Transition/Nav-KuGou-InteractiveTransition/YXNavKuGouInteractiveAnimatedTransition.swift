@@ -16,7 +16,7 @@ class YXNavKuGouInteractiveAnimatedTransition: NSObject, UINavigationControllerD
     
     var gestureRecognizer: UIPanGestureRecognizer?
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         //此处的动画执行者和kugou非交互式中的执行者都是一样的,故此处不再重写，直接调用之前创建好的类
         if operation == .push {
             return customPush

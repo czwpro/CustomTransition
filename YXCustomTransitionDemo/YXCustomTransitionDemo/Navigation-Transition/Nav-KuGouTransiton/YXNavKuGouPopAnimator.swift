@@ -39,7 +39,7 @@ class YXNavKuGouPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
             // 终止位置: 原始位置绕x,y旋转45º后的位置
-            fromView?.transform = self.GetCGAffineTransformRotateAround(centerX: centerX, centerY: centerY, x: x, y: y, angle: angle)
+            fromView?.transform = self.getCGAffineTransformRotateAround(centerX: centerX, centerY: centerY, x: x, y: y, angle: angle)
         }) { (_) in
             
             let wasCanceled = transitionContext.transitionWasCancelled
@@ -62,7 +62,7 @@ class YXNavKuGouPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
      @param angle       旋转的角度
      @return            CGAffineTransform对象
      */
-    func GetCGAffineTransformRotateAround(centerX: CGFloat, centerY: CGFloat, x: CGFloat, y: CGFloat, angle: CGFloat) -> CGAffineTransform {
+    func getCGAffineTransformRotateAround(centerX: CGFloat, centerY: CGFloat, x: CGFloat, y: CGFloat, angle: CGFloat) -> CGAffineTransform {
         let l = y - centerY
         let h = l * sin(angle)
         let b = l * cos(angle)

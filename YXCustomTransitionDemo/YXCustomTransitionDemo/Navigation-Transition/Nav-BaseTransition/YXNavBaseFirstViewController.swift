@@ -34,14 +34,14 @@ class YXNavBaseFirstViewController: UIViewController {
     }
 
     @objc func pushSecond() {
-        navigationController?.delegate = (self as UINavigationControllerDelegate)
+        navigationController?.delegate = self
         let secondController = YXNavBaseSecondViewController()
         navigationController?.pushViewController(secondController, animated: true)
     }
 }
 
 extension YXNavBaseFirstViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == .push {
             return customAnimator
         } else if operation == .pop {

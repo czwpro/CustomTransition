@@ -27,13 +27,13 @@ class YXModalWeChatInteractiveSecondViewController: UIViewController {
     private var transitionImgViewCenter: CGPoint?
     
     let navView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 64))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: navigationBarAndStatusBarHeight))
         view.backgroundColor = UIColor.white
         return view
     }()
     
     let backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 10, y: 20, width: 44, height: 44))
+        let button = UIButton(frame: CGRect(x: 10, y: statusBarHeight, width: 44, height: 44))
         button.setTitle("返回", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
@@ -65,7 +65,7 @@ class YXModalWeChatInteractiveSecondViewController: UIViewController {
         
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
         
-        var scale = 1 - fabs(translation.y / screenHeight)
+        var scale = 1 - abs(translation.y / screenHeight)
         scale = scale < 0 ? 0 : scale
         
         print("second = \(scale)")
@@ -100,7 +100,11 @@ class YXModalWeChatInteractiveSecondViewController: UIViewController {
             animatedTransition.currentImageViewFrame = imageView.frame
             
             animatedTransition.gestureRecognizer = nil
+        
+        @unknown default: break
+            
         }
+        
         
     }
     

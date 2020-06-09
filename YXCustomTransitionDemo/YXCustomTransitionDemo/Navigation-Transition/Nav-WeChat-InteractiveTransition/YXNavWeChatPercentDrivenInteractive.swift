@@ -44,7 +44,7 @@ class YXNavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition 
         
     }
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == .push {
             return customPush
         } else if operation == .pop {
@@ -90,7 +90,7 @@ class YXNavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition 
         
         let translation = gesture.translation(in: gesture.view!)
         
-        var scale = 1 - fabs(translation.y / screenHeight)
+        var scale = 1 - abs(translation.y / screenHeight)
         scale = scale < 0 ? 0 : scale
         scale = scale > 1 ? 1 : scale
         

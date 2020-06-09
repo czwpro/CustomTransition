@@ -47,11 +47,10 @@ class YXNavWeChatInteractivePopAnimator: NSObject, UIViewControllerAnimatedTrans
             transitionImgView.frame = self.transitionBeforeImgFrame
             bgView.alpha = 0
         }) { _ in
-            
             imgBgWhiteView.removeFromSuperview()
             bgView.removeFromSuperview()
             transitionImgView.removeFromSuperview()
-            
+            transitionContext.finishInteractiveTransition()
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }

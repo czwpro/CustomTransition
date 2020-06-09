@@ -21,13 +21,13 @@ class YXModalCATransitionSecondViewController: UIViewController {
     }()
     
     let navView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 64))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: navigationBarAndStatusBarHeight))
         view.backgroundColor = UIColor.white
         return view
     }()
     
     let backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 10, y: 20, width: 44, height: 44))
+        let button = UIButton(frame: CGRect(x: 10, y: statusBarHeight, width: 44, height: 44))
         button.setTitle("返回", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
@@ -80,7 +80,7 @@ class YXModalCATransitionSecondViewController: UIViewController {
     func popAnimation() -> CATransition {
         let transition = CATransition()
         transition.duration = 0.8
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
         /* type
          私有API
@@ -97,10 +97,10 @@ class YXModalCATransitionSecondViewController: UIViewController {
         //下面四个是系统共有的API
         //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
 //        transition.type = "pageUnCurl"
-        transition.type = kCATransitionPush
+        transition.type = CATransitionType.push
         
         // 转场方向
-        transition.subtype = kCATransitionFromLeft
+        transition.subtype = CATransitionSubtype.fromLeft
         
         return transition
     }

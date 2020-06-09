@@ -39,13 +39,12 @@ class YXNavBaseInteractiveSecondViewController: UIViewController {
     }
     
     @objc func interactiveTransitionRecognizerAction(gestureRecognizer: UIPanGestureRecognizer) {
-        
+        print(gestureRecognizer)
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
         
-        var scale = 1 - fabs(translation.x / screenWidth)
+        var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
         
-        print("second = \(scale)")
         switch gestureRecognizer.state {
         case .possible: break
         case .began:
@@ -60,6 +59,7 @@ class YXNavBaseInteractiveSecondViewController: UIViewController {
         case .changed: break
         case .failed, .cancelled, .ended:
             animatedTransition.gestureRecognizer = nil
+        default: break
         }
         
     }

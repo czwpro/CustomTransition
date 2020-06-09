@@ -17,7 +17,7 @@ class YXModalWeChatViewController: UIViewController {
         var size = CGSize.zero
         size.height = 120
         size.width = size.height / image!.size.height * image!.size.width
-        let imageView = UIImageView(frame: CGRect(x: 70, y: 70, width: size.width, height: size.height))
+        let imageView = UIImageView(frame: CGRect(x: 70, y: navigationBarAndStatusBarHeight + 20, width: size.width, height: size.height))
         imageView.image = image
         imageView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(pushSecond))
@@ -48,6 +48,9 @@ class YXModalWeChatViewController: UIViewController {
         animatedTransition.transitionAfterImgFrame = backScreenImageViewRectWithImage(image: imageView.image!)
         
         let controller = YXModalWeChatSecondViewController()
+        
+        controller.modalPresentationStyle = .fullScreen
+        
         // 2.设置代理
         controller.transitioningDelegate = animatedTransition
         

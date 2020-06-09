@@ -44,7 +44,7 @@ class YXModalKuGouPercentDerivenInteractive: UIPercentDrivenInteractiveTransitio
         
         let translation = gesture.translation(in: gesture.view!)
         
-        var scale = 1 - fabs(translation.x / screenWidth)
+        var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
         
         return scale

@@ -30,21 +30,33 @@ class YXNavCATransitionFirstViewController: UIViewController {
         view.backgroundColor = UIColor.backgroundColor()
         view.layer.masksToBounds = true
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        super.viewWillAppear(animated)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         navigationController?.delegate = nil
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        super.viewDidAppear(animated)
     }
     
     @objc func pushSecond() {
         let controller = YXNavCATransitionSecondViewController()
         navigationController?.view.layer.add(pushAnimation(), forKey: nil)
-        navigationController?.pushViewController(controller, animated: true)
+        // 记得这里的 animated 要设为 false，不然会重复
+        navigationController?.pushViewController(controller, animated: false)
     }
 
     func pushAnimation() -> CATransition {
         let transition = CATransition()
         transition.duration = 0.8
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
         /* type
          私有API
@@ -60,12 +72,16 @@ class YXNavCATransitionFirstViewController: UIViewController {
         
         //下面四个是系统共有的API
         //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        transition.type = "cube"
+        transition.type = convertToCATransitionType("cube")
         
         // 转场方向
-        transition.subtype = kCATransitionFromRight
+        transition.subtype = CATransitionSubtype.fromRight
         
         return transition
     }
 
+}
+
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
 }

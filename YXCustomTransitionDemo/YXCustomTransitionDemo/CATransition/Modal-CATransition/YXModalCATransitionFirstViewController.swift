@@ -37,14 +37,15 @@ class YXModalCATransitionFirstViewController: UIViewController {
     
     @objc func pushSecond() {
         let controller = YXModalCATransitionSecondViewController()
+        controller.modalPresentationStyle = .fullScreen
         view.window?.layer.add(presentAnimation(), forKey: nil)
-        self.present(controller, animated: false, completion: nil)  //记得这里的animated要设为NO，不然会重复
+        self.present(controller, animated: false, completion: nil)  //记得这里的 animated 要设为 false，不然会重复
     }
     
     func presentAnimation() -> CATransition {
         let transition = CATransition()
         transition.duration = 0.8
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
         /* type
          私有API
@@ -60,10 +61,10 @@ class YXModalCATransitionFirstViewController: UIViewController {
         
         //下面四个是系统共有的API
         //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        transition.type = kCATransitionPush
+        transition.type = CATransitionType.push
         
         // 转场方向
-        transition.subtype = kCATransitionFromRight
+        transition.subtype = CATransitionSubtype.fromRight
         
         return transition
     }

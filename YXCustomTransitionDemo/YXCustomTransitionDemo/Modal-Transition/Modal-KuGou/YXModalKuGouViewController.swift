@@ -36,6 +36,8 @@ class YXModalKuGouViewController: UIViewController {
     @objc func presentSecond() {
         let controller = YXModalKuGouSecondViewController()
         
+        controller.modalPresentationStyle = .fullScreen
+        
         // 1.设置代理
         controller.transitioningDelegate = animatedTransition
         

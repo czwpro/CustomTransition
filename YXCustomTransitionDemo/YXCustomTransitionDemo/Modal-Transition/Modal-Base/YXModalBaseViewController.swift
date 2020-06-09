@@ -40,6 +40,7 @@ class YXModalBaseViewController: UIViewController {
     @objc func presentSecond() {
         let controller = YXModalBaseSecondViewController()
        
+        controller.modalPresentationStyle = .fullScreen
         // 1.设置代理
         controller.transitioningDelegate = self
         

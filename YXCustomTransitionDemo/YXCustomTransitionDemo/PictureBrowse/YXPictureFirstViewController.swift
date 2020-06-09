@@ -20,7 +20,7 @@ class YXPictureFirstViewController: UIViewController {
         // 布局方式改为从上至下，默认从左到右
         flowLayout.scrollDirection = .vertical
         // Section Inset就是某个section中cell的边界范围
-        flowLayout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0)
+        flowLayout.sectionInset = UIEdgeInsets.init(top: 10, left: 0, bottom: 0, right: 0)
         // 每行内部cell item的间距
         flowLayout.minimumInteritemSpacing = 5
         
@@ -141,7 +141,7 @@ extension YXPictureFirstViewController: UICollectionViewDelegateFlowLayout, UICo
         let index = indexPath.item
         
         //封装参数对象
-        var transitionParameter = YXPictureBrowseTransitionParameter()
+        let transitionParameter = YXPictureBrowseTransitionParameter()
         transitionParameter.transitionImage = cell.imageView.image
         transitionParameter.firstVCImgFrames = firstImageViewFrames
         transitionParameter.transitionImgIndex = index
@@ -150,6 +150,7 @@ extension YXPictureFirstViewController: UICollectionViewDelegateFlowLayout, UICo
         
         //传输必要参数
         let pictureController = YXPictureBrowseViewController()
+        pictureController.modalPresentationStyle = .fullScreen
         pictureController.dataSouceArray = browseSouceModelItemArray
         pictureController.animatedTransition = animatedTransition
         

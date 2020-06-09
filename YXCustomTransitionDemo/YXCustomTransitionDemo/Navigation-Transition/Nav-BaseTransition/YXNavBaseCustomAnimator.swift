@@ -33,7 +33,7 @@ class YXNavBaseCustomAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         // 判断是Push，还是Pop操作
         var isPush = false
-        if let toNavControllers = toVC?.navigationController?.viewControllers, let fromNavControllers = fromVC?.navigationController?.viewControllers, let _ = toNavControllers.index(of: toVC!), let _ = fromNavControllers.index(of: fromVC!) {
+        if let toNavControllers = toVC?.navigationController?.viewControllers, let fromNavControllers = fromVC?.navigationController?.viewControllers, let _ = toNavControllers.firstIndex(of: toVC!), let _ = fromNavControllers.firstIndex(of: fromVC!) {
             isPush = true
         }
         

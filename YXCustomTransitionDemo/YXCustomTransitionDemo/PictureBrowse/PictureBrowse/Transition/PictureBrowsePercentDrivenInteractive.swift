@@ -11,14 +11,13 @@ import UIKit
 class PictureBrowsePercentDrivenInteractive: UIPercentDrivenInteractiveTransition {
 
     private let transitionParameter: PictureBrowseTransitionParameter
-    private var transitionContext: UIViewControllerContextTransitioning?
+    private weak var transitionContext: UIViewControllerContextTransitioning?
     private var gestureRecognizer: UIPanGestureRecognizer?
     
     private var firstVCImgWhiteView: UIView?
     private var blackBgView: UIView?
     
     init(transitionParameter: PictureBrowseTransitionParameter) {
-        print("----------------PercentDrivenInteractive init----------------")
         self.transitionParameter = transitionParameter
         gestureRecognizer = transitionParameter.gestureRecognizer
         super.init()
@@ -35,13 +34,11 @@ class PictureBrowsePercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
         self.transitionContext = transitionContext
         //注释掉，这样调用会是线性的动画，体验不好，所以在本类里自定义交互式的动画
         //        super.startInteractiveTransition(transitionContext)
-        print("--------startInteractiveTransition--------")
         beginInterPercent()
     }
     
     @objc func gestureRecognizeDidUpdate(gesture: UIPanGestureRecognizer) {
         let scale = percentForGesture(gesture: gesture)
-//        print("interactive: \(scale)")
         
         switch gesture.state {
         case .began:
@@ -104,7 +101,6 @@ class PictureBrowsePercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
     
     func beginInterPercent() {
         // 开始
-        print("----------------开始----------------")
         guard let transitionContext = transitionContext else { return }
         
         //转场过渡的容器view
@@ -134,7 +130,6 @@ class PictureBrowsePercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
     
     func interPercentFinish(scale: CGFloat) {
         // 完成
-        print("完成")
         guard let transitionContext = transitionContext else { return }
         
         //转场过渡的容器view
@@ -162,10 +157,10 @@ class PictureBrowsePercentDrivenInteractive: UIPercentDrivenInteractiveTransitio
         transitionImgView.frame = transitionParameter.currentPanGestImgFrame
         containerView.addSubview(transitionImgView)
         
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: .curveLinear) {
             transitionImgView.frame = self.transitionParameter.firstVCImgFrame
             bgView.alpha = 0
-        }) { _ in
+        } completion: { _ in
             self.blackBgView?.removeFromSuperview()
             self.firstVCImgWhiteView?.removeFromSuperview()
             self.blackBgView = nil

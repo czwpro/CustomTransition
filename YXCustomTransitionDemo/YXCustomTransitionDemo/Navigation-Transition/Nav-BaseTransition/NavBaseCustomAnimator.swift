@@ -49,13 +49,13 @@ class NavBaseCustomAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         
         // 动画
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext)) {
             if isPush {
                 toView?.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
             } else {
                 fromView?.frame = CGRect(x: screenWidth, y: screenHeight, width: screenWidth, height: screenHeight)
             }
-        }) { (_) in
+        } completion: { _ in
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }

@@ -23,8 +23,8 @@ class NavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition {
     
     private var bgView: UIView?
     private var fromView: UIView?
-    
-    private var transitionContext: UIViewControllerContextTransitioning?
+    // 避免循环引用
+    private weak var transitionContext: UIViewControllerContextTransitioning?
     private var beforeImgWhiteView: UIView?
     private var blackBgView: UIView?
     
@@ -63,8 +63,7 @@ class NavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition {
     
     @objc func gestureRecognizeDidUpdate(gesture: UIPanGestureRecognizer) {
         let scale = percentForGesture(gesture: gesture)
-        print("interactive: \(scale)")
-        
+
         switch gesture.state {
         case .began:
             //没用
@@ -178,10 +177,10 @@ class NavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition {
         transitionImgView.frame = currentImageViewFrame
         containerView!.addSubview(transitionImgView)
         
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: .curveLinear) {
             transitionImgView.frame = self.beforeImageViewFrame
             bgView.alpha = 0
-        }) { _ in
+        } completion: { _ in
             self.blackBgView?.removeFromSuperview()
             self.beforeImgWhiteView?.removeFromSuperview()
             self.blackBgView = nil
@@ -195,6 +194,8 @@ class NavWeChatPercentDrivenInteractive: UIPercentDrivenInteractiveTransition {
             self.transitionContext?.completeTransition(!cancel)
             
         }
+
+
     }
     
 }

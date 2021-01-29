@@ -47,10 +47,10 @@ class PictureBrowsePushAnimator: NSObject, UIViewControllerAnimatedTransitioning
         transitionContext.containerView.addSubview(transitionImgView)
         
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext)) {
             transitionImgView.frame = transitionParameter.secondVCImgFrame
             bgView.alpha = 1
-        }) { _ in
+        } completion: { _ in
             toView?.isHidden = false
             
             imgBgWhiteView.removeFromSuperview()

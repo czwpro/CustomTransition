@@ -29,7 +29,7 @@ class ModalBaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(imageView)
         title = "Base"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
     }
     

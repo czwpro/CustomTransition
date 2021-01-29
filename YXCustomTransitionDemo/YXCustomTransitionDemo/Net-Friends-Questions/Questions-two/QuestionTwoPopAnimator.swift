@@ -33,7 +33,7 @@ class QuestionTwoPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         //图片背景的空白view (设置和控制器的背景颜色一样，给人一种图片被调走的假象)
         let imgBgWhiteView = UIView(frame: transitionBeforeImgFrame)
-        imgBgWhiteView.backgroundColor = UIColor.backgroundColor()
+        imgBgWhiteView.backgroundColor = UIColor.background
         containerView.addSubview(imgBgWhiteView)
         
         //有渐变的黑色背景
@@ -54,12 +54,12 @@ class QuestionTwoPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         flipView.layer.transform = getTransForm3D(with: CGFloat(-Double.pi / 2 - Double.pi / 8))
         flipView.frame = CGRect(x: 0, y: 0, width: transitionContext.containerView.frame.size.width, height: transitionContext.containerView.frame.size.height)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext)) {
                 transitionImgView.frame = self.transitionBeforeImgFrame
                 flipView.layer.transform = self.getTransForm3D(with: 0)
                 flipView.frame = self.transitionBeforeImgFrame
                 bgView.alpha = 0
-        }) { _ in
+        } completion: { _ in
             
             imgBgWhiteView.removeFromSuperview()
             bgView.removeFromSuperview()

@@ -27,7 +27,7 @@ class NavBaseFirstViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Base"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
         
         view.addSubview(imageView)
@@ -42,12 +42,7 @@ class NavBaseFirstViewController: UIViewController {
 
 extension NavBaseFirstViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if operation == .push {
-            return customAnimator
-        } else if operation == .pop {
-            return customAnimator
-        }
-        return nil
+        return customAnimator   // push or pop
     }
 
     

@@ -111,6 +111,7 @@
 		66ECE821208047D000EB2B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ECE81F208047D000EB2B87 /* LaunchScreen.storyboard */; };
 		66ECE82C208047D100EB2B87 /* YXCustomTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECE82B208047D100EB2B87 /* YXCustomTransitionDemoTests.swift */; };
 		66ECE837208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECE836208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift */; };
+		66FA250925C2571000DEDD60 /* CATransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA250825C2571000DEDD60 /* CATransitionType.swift */; };
 		FF1D8C5810D362DA93AE1021 /* Pods_YXCustomTransitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66F6FB2E1033402D5BA7CE0 /* Pods_YXCustomTransitionDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -244,6 +245,7 @@
 		66ECE832208047D100EB2B87 /* YXCustomTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXCustomTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66ECE836208047D100EB2B87 /* YXCustomTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXCustomTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		66ECE838208047D100EB2B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66FA250825C2571000DEDD60 /* CATransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransitionType.swift; sourceTree = "<group>"; };
 		A66F6FB2E1033402D5BA7CE0 /* Pods_YXCustomTransitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXCustomTransitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBAFE33A67331732062D71A /* Pods-YXCustomTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXCustomTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXCustomTransitionDemo/Pods-YXCustomTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -624,9 +626,9 @@
 		66ECE815208047CD00EB2B87 /* YXCustomTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				66FA250725C2570100DEDD60 /* Extension */,
 				66ECE816208047CD00EB2B87 /* AppDelegate.swift */,
 				661637E120804C7300794ED1 /* Constant.swift */,
-				661637E320804D5100794ED1 /* UIKit+Extension.swift */,
 				661637E520804E5600794ED1 /* TransitionHomeViewController.swift */,
 				661792D420805A8200D69E07 /* CATransition */,
 				66A897802084820A007B8AC3 /* Navigation-Transition */,
@@ -655,6 +657,15 @@
 				66ECE838208047D100EB2B87 /* Info.plist */,
 			);
 			path = YXCustomTransitionDemoUITests;
+			sourceTree = "<group>";
+		};
+		66FA250725C2570100DEDD60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				661637E320804D5100794ED1 /* UIKit+Extension.swift */,
+				66FA250825C2571000DEDD60 /* CATransitionType.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B56FE4B45FFCFBE5852AC04A /* Pods */ = {
@@ -901,6 +912,7 @@
 				666BA0552085FA6600C9C466 /* NavWeChatInteractivePopAnimator.swift in Sources */,
 				66E020C52086DA52000E1A80 /* ModalKuGouInteractiveViewController.swift in Sources */,
 				66E020CD2086DE4A000E1A80 /* ModalWeChatViewController.swift in Sources */,
+				66FA250925C2571000DEDD60 /* CATransitionType.swift in Sources */,
 				666BA0502085EF1C00C9C466 /* NavKuGouPercentDerivenInteractive.swift in Sources */,
 				66A89792208494CF007B8AC3 /* NavKuGouPopAnimator.swift in Sources */,
 				666BA04C2085EED200C9C466 /* NavKuGouInteractiveSecondViewController.swift in Sources */,

@@ -27,7 +27,7 @@ class NavBaseInteractiveFirstViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         title = "Base"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
         
         view.addSubview(imageView)

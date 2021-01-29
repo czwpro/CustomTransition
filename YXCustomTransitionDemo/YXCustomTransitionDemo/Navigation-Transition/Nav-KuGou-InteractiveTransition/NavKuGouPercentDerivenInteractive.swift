@@ -23,7 +23,7 @@ class NavKuGouPercentDerivenInteractive: UIPercentDrivenInteractiveTransition {
     }
     
     override func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
-        //此句话的重要性
+        //相当于走到 `NavBaseCustomAnimator` 中的 `animateTransition(using:)` 代理方法去了，那里实现了具体的动画
         super.startInteractiveTransition(transitionContext)
     }
     

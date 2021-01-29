@@ -30,7 +30,7 @@ class ModalWeChatInteractiveViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         title = "WeChat-Interactive"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.addSubview(imageView)
     }
     

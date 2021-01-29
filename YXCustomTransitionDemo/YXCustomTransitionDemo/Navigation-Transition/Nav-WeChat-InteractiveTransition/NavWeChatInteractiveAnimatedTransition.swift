@@ -62,6 +62,10 @@ class NavWeChatInteractiveAnimatedTransition: NSObject {
             customPop.transitionAfterImgFrame = transitionAfterImgFrame
         }
     }
+    
+    deinit {
+        print("deinit: \(type(of: self))")
+    }
 }
 
 

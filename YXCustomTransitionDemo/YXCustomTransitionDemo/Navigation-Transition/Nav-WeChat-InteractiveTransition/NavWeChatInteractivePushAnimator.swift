@@ -35,7 +35,7 @@ class NavWeChatInteractivePushAnimator: NSObject, UIViewControllerAnimatedTransi
         
         // 图片背景的空白view (设置和控制器的背景颜色一样，给人一种图片被调走的假象 [可以换种颜色看看效果])
         let imgBgWhiteView = UIView(frame: transitionBeforeImgFrame)
-        imgBgWhiteView.backgroundColor = UIColor.backgroundColor()
+        imgBgWhiteView.backgroundColor = UIColor.background
         containerView.addSubview(imgBgWhiteView)
         
         // 有渐变的黑色背景
@@ -49,10 +49,10 @@ class NavWeChatInteractivePushAnimator: NSObject, UIViewControllerAnimatedTransi
         transitionImgView.frame = transitionBeforeImgFrame
         transitionContext.containerView.addSubview(transitionImgView)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.3, options: .curveLinear) {
             transitionImgView.frame = self.transitionAfterImgFrame
             bgView.alpha = 1.0
-        }) { _ in
+        } completion: { _ in
             toView?.isHidden = false
             imgBgWhiteView.removeFromSuperview()
             bgView.removeFromSuperview()
@@ -62,4 +62,7 @@ class NavWeChatInteractivePushAnimator: NSObject, UIViewControllerAnimatedTransi
         }
     }
     
+    deinit {
+        print("deinit: \(type(of: self))")
+    }
 }

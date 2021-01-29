@@ -39,12 +39,12 @@ class NavBaseInteractiveSecondViewController: UIViewController {
     }
     
     @objc func interactiveTransitionRecognizerAction(gestureRecognizer: UIPanGestureRecognizer) {
-        print(gestureRecognizer)
+        
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
         
         var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
-        
+
         switch gestureRecognizer.state {
         case .possible: break
         case .began:

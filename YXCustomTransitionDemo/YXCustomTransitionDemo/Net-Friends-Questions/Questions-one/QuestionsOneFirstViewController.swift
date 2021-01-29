@@ -40,7 +40,7 @@ class QuestionsOneFirstViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        automaticallyAdjustsScrollViewInsets = false
+//        automaticallyAdjustsScrollViewInsets = false
         view.addSubview(tableView)
     }
     
@@ -97,7 +97,7 @@ extension QuestionsOneFirstViewController: UITableViewDataSource, UITableViewDel
         newSize.height = screenWidth * 0.6
         newSize.width = newSize.height / size.height * size.width
         
-        let imageY: CGFloat = 0
+        let imageY: CGFloat = 100
         let imageX: CGFloat = (screenWidth - newSize.width) * 0.5
         
         let rect = CGRect(x: imageX, y: imageY, width: newSize.width, height: newSize.height)

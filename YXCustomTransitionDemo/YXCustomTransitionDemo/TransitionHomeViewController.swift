@@ -14,7 +14,7 @@ class TransitionHomeViewController: UIViewController {
 
     let tableView: UITableView = {
         let tableView = UITableView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: screenHeight - 64), style: .grouped)
-        tableView.backgroundColor = UIColor.backgroundColor()
+        tableView.backgroundColor = UIColor.background
         tableView.tableFooterView = UIView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
         tableView.rowHeight = 50
@@ -111,7 +111,7 @@ extension TransitionHomeViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(UITableViewCell.self)")!
-        cell.backgroundColor = UIColor.backgroundColor()
+        cell.backgroundColor = UIColor.background
         cell.textLabel?.text = cellTextArray[indexPath.section][indexPath.row]
         return cell
     }

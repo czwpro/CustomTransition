@@ -94,8 +94,6 @@ extension UIColor {
     }
   
     // backgroundColor
-    class func backgroundColor() -> UIColor {
-        return UIColor(r: 240, g: 240, b: 240)
-    }
+    class var background: UIColor { UIColor(r: 240, g: 240, b: 240) }
     
 }

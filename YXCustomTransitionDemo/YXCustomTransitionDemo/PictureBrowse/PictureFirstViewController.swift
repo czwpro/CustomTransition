@@ -8,7 +8,7 @@
 
 import UIKit
 
-let cellImageSize: CGFloat = (screenWidth - 2 * 5) / 3.0
+let cellImageSize: CGFloat = floor((screenWidth - 2 * 5) / 3.0)
 
 class PictureFirstViewController: UIViewController {
 
@@ -30,6 +30,7 @@ class PictureFirstViewController: UIViewController {
         collectionView.alwaysBounceVertical = true
         collectionView.backgroundColor = UIColor.clear
         collectionView.register(PictureFirstPageCell.self, forCellWithReuseIdentifier: "\(PictureFirstPageCell.self)")
+        
         return collectionView
     }()
     

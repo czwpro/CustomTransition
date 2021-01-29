@@ -27,7 +27,7 @@ class NavKuGouTransitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "KuGou"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.addSubview(imageView)
     }
     

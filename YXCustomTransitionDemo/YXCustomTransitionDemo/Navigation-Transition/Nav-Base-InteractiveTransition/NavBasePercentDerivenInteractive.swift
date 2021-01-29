@@ -21,7 +21,7 @@ class NavBasePercentDerivenInteractive: UIPercentDrivenInteractiveTransition {
     //实现 UIViewControllerInteractiveTransitioning 协议的方法（必须实现）
     //开始交互转场
     override func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
-        //相当于走到 Animator 中的代理方法去了，那里实现了具体的动画
+        //相当于走到 `NavBaseCustomAnimator` 中的 `animateTransition(using:)` 代理方法去了，那里实现了具体的动画
         super.startInteractiveTransition(transitionContext)
     }
     

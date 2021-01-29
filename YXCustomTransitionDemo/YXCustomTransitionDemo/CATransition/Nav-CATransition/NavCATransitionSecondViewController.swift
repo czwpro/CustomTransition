@@ -41,7 +41,7 @@ class NavCATransitionSecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(imageView)
         title = "Second"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
         
         view.addSubview(navView)
@@ -71,31 +71,14 @@ class NavCATransitionSecondViewController: UIViewController {
         transition.duration = 0.8
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
-        /* type
-         私有API
-         cube                   立方体效果
-         pageCurl               向上翻一页
-         pageUnCurl             向下翻一页
-         rippleEffect           水滴波动效果
-         suckEffect             变成小布块飞走的感觉
-         oglFlip                上下翻转
-         cameraIrisHollowClose  相机镜头关闭效果
-         cameraIrisHollowOpen   相机镜头打开效果
-         */
-        
-        //下面四个是系统共有的API
-        //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        transition.type = convertToCATransitionType("pageUnCurl")
+        // 下面四个是系统开放的API
+        // moveIn, push, reveal, fade
+        transition.type = .pageUnCurl
         
         // 转场方向
-        transition.subtype = CATransitionSubtype.fromRight
+        transition.subtype = .fromRight
         
         return transition
     }
 
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
-	return CATransitionType(rawValue: input)
 }

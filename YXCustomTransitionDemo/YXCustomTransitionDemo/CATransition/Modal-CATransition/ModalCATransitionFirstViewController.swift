@@ -27,7 +27,7 @@ class ModalCATransitionFirstViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(imageView)
         title = "Modal-CATransition"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
     }
     
@@ -47,24 +47,12 @@ class ModalCATransitionFirstViewController: UIViewController {
         transition.duration = 0.8
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
-        /* type
-         私有API
-         cube                   立方体效果
-         pageCurl               向上翻一页
-         pageUnCurl             向下翻一页
-         rippleEffect           水滴波动效果
-         suckEffect             变成小布块飞走的感觉
-         oglFlip                上下翻转
-         cameraIrisHollowClose  相机镜头关闭效果
-         cameraIrisHollowOpen   相机镜头打开效果
-         */
-        
-        //下面四个是系统共有的API
-        //kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        transition.type = CATransitionType.push
+        // 下面四个是系统开放的API
+        // moveIn, push, reveal, fade
+        transition.type = .push
         
         // 转场方向
-        transition.subtype = CATransitionSubtype.fromRight
+        transition.subtype = .fromRight
         
         return transition
     }

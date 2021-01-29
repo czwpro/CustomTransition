@@ -29,7 +29,7 @@ class ModalKuGouViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(imageView)
         title = "KuGou"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
     }
     

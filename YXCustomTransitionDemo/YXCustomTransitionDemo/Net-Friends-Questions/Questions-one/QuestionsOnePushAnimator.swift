@@ -43,12 +43,12 @@ class QuestionsOnePushAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         transitionImgView.frame = transitionBeforeImgFrame
         transitionContext.containerView.addSubview(transitionImgView)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: .curveLinear, animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: .curveLinear) {
             
             transitionImgView.frame = self.transitionAfterImgFrame
             toView?.alpha = 1;
             
-        }) { _ in
+        } completion: { _ in
             
             transitionImgView .removeFromSuperview()
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)

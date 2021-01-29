@@ -26,15 +26,6 @@ class QuestionsOneSecondViewController: UIViewController {
         imgView.isUserInteractionEnabled = true
         return imgView
     }()
-
-    
-    let backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 20, width: 60, height: 44))
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.setImage(UIImage(named: "back"), for: .normal)
-        button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
-        return button
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +35,6 @@ class QuestionsOneSecondViewController: UIViewController {
         view.backgroundColor = UIColor.white
         
         view.addSubview(imgView)
-        view.addSubview(backButton)
         
         
         let labelY = imgView.frame.maxX
@@ -53,21 +43,5 @@ class QuestionsOneSecondViewController: UIViewController {
         label.text = "测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据"
         view.addSubview(label)
         
-    }
-
-
-    override func viewWillDisappear(_ animated: Bool) {
-        imgView.isHidden = true
-        navigationController?.isNavigationBarHidden = false
-        super.viewWillDisappear(animated)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
-    }
-    
-    @objc func backButtonAction() {
-        navigationController?.popViewController(animated: true)
     }
 }

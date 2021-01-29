@@ -30,7 +30,7 @@ class NavWeChatInteractiveViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         title = "WeChat-Interactive"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.addSubview(imageView)
     }
     
@@ -74,5 +74,10 @@ class NavWeChatInteractiveViewController: UIViewController {
         let rect = CGRect(x: 0, y: imageY, width: newSize.width, height: newSize.height)
         return rect
         
+    }
+    
+    
+    deinit {
+        print("deinit: \(type(of: self))")
     }
 }

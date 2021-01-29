@@ -36,7 +36,7 @@ class QuestionsOnePopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         //图片背景的空白view (设置和控制器的背景颜色一样，给人一种图片被调走的假象)
         let imgBgWhiteView = UIView(frame: transitionBeforeImgFrame)
-        imgBgWhiteView.backgroundColor = UIColor.backgroundColor()
+        imgBgWhiteView.backgroundColor = UIColor.background
         containerView.addSubview(imgBgWhiteView)
         
         //有渐变的白色背景
@@ -51,12 +51,12 @@ class QuestionsOnePopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         transitionImgView.frame = transitionAfterImgFrame
         transitionContext.containerView.addSubview(transitionImgView)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: .curveLinear, animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: .curveLinear) {
             
             transitionImgView.frame = self.transitionBeforeImgFrame
             toView?.alpha = 1;
             
-        }) { _ in
+        } completion: { _ in
             imgBgWhiteView.removeFromSuperview()
             bgView.removeFromSuperview()
             transitionImgView .removeFromSuperview()

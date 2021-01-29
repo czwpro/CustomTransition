@@ -35,7 +35,7 @@ class NavWeChatPushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         // 图片背景的空白view (设置和控制器的背景颜色一样，给人一种图片被调走的假象 [可以换种颜色看看效果])
         let imgBgWhiteView = UIView(frame: transitionBeforeImgFrame)
-        imgBgWhiteView.backgroundColor = UIColor.backgroundColor()
+        imgBgWhiteView.backgroundColor = UIColor.background
         containerView.addSubview(imgBgWhiteView)
         
         // 有渐变的黑色背景

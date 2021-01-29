@@ -32,16 +32,16 @@ class NavKuGouPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let centerY = fromView!.height * 0.5
         let x = fromView!.width * 0.5
         let y = fromView!.height * 1.8
+        // 角度与弧度的转换：Double.pi = 180°，45° 对应的弧度 = 45.0 / 180.0 * Double.pi
         let angle: CGFloat = CGFloat(45.0 / 180.0 * Double.pi)
         
         // 起始位置：原始位置
         fromView?.transform = CGAffineTransform.identity
-        
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
+
+        UIView.animate(withDuration: transitionDuration(using: transitionContext)) {
             // 终止位置: 原始位置绕x,y旋转45º后的位置
             fromView?.transform = self.getCGAffineTransformRotateAround(centerX: centerX, centerY: centerY, x: x, y: y, angle: angle)
-        }) { (_) in
-            
+        } completion: { _ in
             let wasCanceled = transitionContext.transitionWasCancelled
             if !wasCanceled {
                 fromView?.removeFromSuperview()
@@ -49,6 +49,7 @@ class NavKuGouPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             //设置transitionContext通知系统动画执行完毕
             transitionContext.completeTransition(!wasCanceled)
         }
+
         
     }
     

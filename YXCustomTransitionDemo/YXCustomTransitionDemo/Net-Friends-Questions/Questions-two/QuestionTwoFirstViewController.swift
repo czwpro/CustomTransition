@@ -31,7 +31,7 @@ class QuestionTwoFirstViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "QuestionTwo"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         
         view.addSubview(imgView)
     }

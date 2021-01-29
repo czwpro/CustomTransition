@@ -43,12 +43,11 @@ class NavWeChatInteractiveSecondViewController: UIViewController {
     @objc func interactiveTransitionRecognizerAction(gestureRecognizer: UIPanGestureRecognizer) {
         
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!)
-        
+
         var scale = 1 - abs(translation.x / screenWidth)
         scale = scale < 0 ? 0 : scale
         scale = scale > 1 ? 1 : scale
         
-        print("second = \(scale)")
         switch gestureRecognizer.state {
         case .possible: break
         case .began:
@@ -77,7 +76,7 @@ class NavWeChatInteractiveSecondViewController: UIViewController {
             animatedTransition.currentImageView = imageView
             animatedTransition.currentImageViewFrame = imageView.frame
             navigationController?.delegate = animatedTransition
-        @unknown default: break
+         default: break
         }
         
     }
@@ -90,4 +89,7 @@ class NavWeChatInteractiveSecondViewController: UIViewController {
         return newSize
     }
 
+    deinit {
+        print("deinit: \(type(of: self))")
+    }
 }

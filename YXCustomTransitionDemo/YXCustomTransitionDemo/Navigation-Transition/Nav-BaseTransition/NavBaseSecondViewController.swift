@@ -26,7 +26,7 @@ class NavBaseSecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "BaseSecond"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
         view.addSubview(imageView)
     }

@@ -51,7 +51,7 @@ class PictureBrowsePopAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         transitionContext.containerView.addSubview(transitionImgView)
         
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: .curveLinear) {
             
             //避免frame数值都为零的处理
             var imageFrame = toFrame
@@ -62,7 +62,7 @@ class PictureBrowsePopAnimator: NSObject, UIViewControllerAnimatedTransitioning 
             transitionImgView.frame = imageFrame
             bgView.alpha = 0
             
-        }) { _ in
+        } completion: { _ in
             bgView.removeFromSuperview()
             imgBgWhiteView.removeFromSuperview()
             transitionImgView .removeFromSuperview()

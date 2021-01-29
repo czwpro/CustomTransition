@@ -41,7 +41,7 @@ class ModalKuGouSecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(imageView)
         title = "Second"
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         view.layer.masksToBounds = true
         
         view.addSubview(navView)

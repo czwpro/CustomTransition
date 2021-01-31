@@ -15,7 +15,7 @@ class ModalCATransitionFirstViewController: UIViewController {
         imageView.center = self.view.center
         imageView.image = UIImage(named: "CATransition")
         imageView.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(pushSecond))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(presentSecond))
         imageView.addGestureRecognizer(tap)
         return imageView
     }()
@@ -35,7 +35,7 @@ class ModalCATransitionFirstViewController: UIViewController {
         navigationController?.delegate = nil
     }
     
-    @objc func pushSecond() {
+    @objc func presentSecond() {
         let controller = ModalCATransitionSecondViewController()
         controller.modalPresentationStyle = .fullScreen
         view.window?.layer.add(presentAnimation(), forKey: nil)
